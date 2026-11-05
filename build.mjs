@@ -388,6 +388,30 @@ const toSubdir = (html) =>
     .replace(/(["'\s(])assets\//g, '$1../assets/')
     .replace(/href="publications\.bib"/g, 'href="../publications.bib"');
 
+// Social cards and hreflang need absolute URLs, which cannot be known until the
+// site has an address. Set SITE_URL=https://gychen-nju.github.io at build time and
+// every such URL is resolved against it; leave it unset for local preview.
+const SITE_URL = (process.env.SITE_URL || '').replace(/\/+$/, '');
+
+const absolutize = (html, out) => {
+  const dir = out.includes('/') ? out.slice(0, out.lastIndexOf('/') + 1) : '';
+  const base = `${SITE_URL}/${dir}`;
+  const abs = (href) => new URL(href, base).href;
+  const self = out.endsWith('/index.html') || out === 'index.html'
+    ? base
+    : abs(out.slice(dir.length));
+  let next = html
+    .replace(/<meta property="og:image" content="([^"]+)">/, (m, href) =>
+      `<meta property="og:image" content="${abs(href)}">`)
+    .replace(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g, (m, lang, href) =>
+      `<link rel="alternate" hreflang="${lang}" href="${abs(href)}">`);
+  // A canonical URL keeps the two editions from competing in search results.
+  if (!/rel="canonical"/.test(next)) {
+    next = next.replace('</head>', `  <link rel="canonical" href="${self}">\n</head>`);
+  }
+  return next;
+};
+
 fs.mkdir(path.join(ROOT, 'zh'), { recursive: true });
 
 for (const page of [
@@ -397,8 +421,10 @@ for (const page of [
   { src: 'publications.zh', out: 'zh/publications.html', subdir: true },
 ]) {
   const template = await read(`src/${page.src}.html`);
-  const html = fill(template);
-  await write(page.out, page.subdir ? toSubdir(html) : html);
+  let html = fill(template);
+  if (page.subdir) html = toSubdir(html);
+  if (SITE_URL) html = absolutize(html, page.out);
+  await write(page.out, html);
 }
 
 // One machine-readable file for the whole record: every entry's BibTeX, and a

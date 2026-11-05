@@ -103,11 +103,15 @@ site is then public while the repository stays private.
 
 `.nojekyll` is included so GitHub Pages serves the directory verbatim.
 
-Two things to fix once the domain is known:
+**Absolute URLs.** Social cards, `hreflang` alternates and the canonical link need the
+site's real address. Pass it at build time and the build writes them in:
 
-- `og:image` in every `<head>` is a relative path; social platforms need an absolute URL
-  (`https://your.domain/assets/img/og-cover.jpg`).
-- `hreflang` alternates are relative too; make them absolute for search engines.
+```sh
+SITE_URL=https://gychen-nju.github.io node build.mjs
+```
+
+Without `SITE_URL` the pages keep relative URLs, which is correct for local preview and
+works for any host. Re-run the build with the right `SITE_URL` before every deploy.
 
 ## What is verified, and what is not
 

@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guoyin Chen — Solar Physics, University of Oslo</title>
+  <meta name="description" content="Solar physicist at the Rosseland Centre for Solar Physics, University of Oslo. Spectropolarimetric inversion, magnetic-field extrapolation, and data-constrained MHD models of the solar atmosphere.">
+  <meta name="author" content="Guoyin Chen">
+  <meta name="theme-color" content="#f2f1ec">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Guoyin Chen — Solar Physics">
+  <meta property="og:description" content="The Sun's magnetic field is written in polarised light. I build the diagnostics that read it.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Guoyin Chen, guest researcher at the Rosseland Centre for Solar Physics, University of Oslo.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/spectral-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fragmentmono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Guoyin Chen",
+    "jobTitle": "Guest Researcher",
+    "email": "guoyin.chen@astro.uio.no",
+    "affiliation": [
+      { "@type": "Organization", "name": "Rosseland Centre for Solar Physics, University of Oslo" },
+      { "@type": "Organization", "name": "Nanjing University" }
+    ],
+    "knowsAbout": ["Solar physics", "Spectropolarimetry", "Magnetohydrodynamics", "Machine learning", "Coronal seismology", "Magnetic field extrapolation"],
+    "url": "https://github.com/gychen-NJU",
+    "sameAs": [
+      "https://orcid.org/0000-0001-9610-0433",
+      "https://github.com/gychen-NJU",
+      "https://www.researchgate.net/profile/Guoyin-Chen-2",
+      "https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead" data-header>
+    <div class="wrap masthead__in">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark__mark" aria-hidden="true"></span>
+        <span class="wordmark__text">Guoyin Chen</span>
+        <span class="wordmark__sep" aria-hidden="true">/</span>
+        <span class="wordmark__sub">Solar physics</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="#code">Software</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="masthead__ext">
+        <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+        <a href="https://github.com/gychen-NJU">GitHub</a>
+        <a class="lang-link" href="zh/index.html" hreflang="zh-Hans" lang="zh-CN">中文</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= hero ================= -->
+    <section class="hero wrap">
+      <div class="grid12 hero__grid">
+        <div class="hero__copy">
+          <h1 class="reveal">Guoyin Chen</h1>
+          <p class="hero__lead reveal" style="--d:120ms">The Sun's magnetic field is written in polarised light. I build the diagnostics that read it: inversion codes, neural solvers, field extrapolations. Then I test what we think the solar atmosphere is doing.</p>
+          <div class="hero__meta mono reveal" style="--d:180ms">
+            <span>Guest researcher, Rosseland Centre for Solar Physics</span>
+            <span>Institute of Theoretical Astrophysics, University of Oslo</span>
+            <span>School of Astronomy and Space Science, Nanjing University</span>
+            <a href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+          </div>
+          <div class="hero__actions reveal" style="--d:240ms">
+            <a class="btn" href="publications.html">Publications <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#code">Software</a>
+          </div>
+        </div>
+
+        <figure class="plate plate--hero hero__plate reveal" style="--d:90ms">
+          <div class="plate__media">
+            <img src="assets/img/portrait.jpg"
+                 srcset="assets/img/portrait-sm.jpg 480w, assets/img/portrait.jpg 1100w"
+                 sizes="(max-width: 900px) 84vw, 34vw"
+                 width="1100" height="1466"
+                 alt="Guoyin Chen, photographed against a slate-blue studio background"
+                 fetchpriority="high" decoding="async">
+          </div>
+          <div class="plate__no"><b>Plate I</b><span>Portrait</span></div>
+          <figcaption>Guoyin Chen, Oslo. Photograph courtesy of the University of Oslo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv11-d" d="M0 38.3L10 38.5L20 39.1L30 38.5L40 37.7L50 38.0L60 39.4L61 39.7L62 40.1L63 40.6L64 41.1L65 41.8L66 42.5L67 43.4L68 44.3L69 45.3L70 46.4L71 47.5L72 48.6L73 49.5L74 50.3L75 50.8L76 50.9L77 50.5L78 49.4L79 47.6L80 45.0L81 41.6L82 37.4L83 33.2L84 29.6L85 26.9L86 25.0L87 23.9L88 23.4L89 23.5L90 24.1L91 25.0L92 26.0L93 27.2L94 28.5L95 29.7L96 30.8L97 31.9L98 32.8L99 33.7L100 34.4L101 35.0L102 35.5L103 35.9L104 36.3L110 37.2L120 37.9L130 38.9L140 38.8L150 38.3L160 38.6L170 38.9L180 38.0L190 37.4L200 37.7L210 37.7L220 37.0L230 37.1L240 38.0L250 38.1L260 37.8L270 38.4L280 39.1L290 38.8L298 39.3L299 39.6L300 39.9L301 40.4L302 40.9L303 41.5L304 42.2L305 43.0L306 43.9L307 44.9L308 45.9L309 46.8L310 47.7L311 48.5L312 49.0L313 49.2L314 49.0L315 48.2L316 46.8L317 44.7L318 41.8L319 38.5L320 35.1L321 32.3L322 30.2L323 28.7L324 27.8L325 27.5L326 27.6L327 28.0L328 28.6L329 29.4L330 30.2L331 31.0L332 31.9L333 32.6L334 33.3L335 34.0L336 34.5L337 35.0L338 35.4L339 35.8L340 36.1L350 37.6L360 37.6L370 37.0L380 37.4L390 38.3L400 38.2L410 38.0L420 38.7L430 39.1L440 38.4L450 38.0L460 38.4L470 38.1L480 37.6L484 38.3L485 38.6L486 39.0L487 39.5L488 40.1L489 40.8L490 41.6L491 42.6L492 43.6L493 44.7L494 45.8L495 47.0L496 48.1L497 49.2L498 50.1L499 50.6L500 50.8L501 50.5L502 49.6L503 48.0L504 45.6L505 42.4L506 38.5L507 34.4L508 30.9L509 28.2L510 26.2L511 24.9L512 24.3L513 24.3L514 24.6L515 25.3L516 26.2L517 27.2L518 28.3L519 29.4L520 30.4L521 31.4L522 32.4L523 33.2L524 34.0L525 34.7L526 35.3L527 35.8L528 36.3L530 37.0L540 38.6L550 38.4L560 38.2L570 38.9L580 39.0L590 38.1L600 37.8" pathLength="1"/>
+          <clipPath id="sv11-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv11-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv11-d" clip-path="url(#sv11-up)"/>
+        <use class="trace trace--red" href="#sv11-d" clip-path="url(#sv11-dn)"/>
+      </svg></div>
+
+    <!-- ================= research ================= -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>01</b>Research</span>
+          </div>
+          <div class="section__title">
+            <h2>Reading the magnetic field</h2>
+            <p>Five threads, one question asked at five heights: what is the field doing in the solar atmosphere, and how would we know?</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="threads">
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">01</div>
+                <div class="thread__head">
+                  <h3>Spectropolarimetric inversion</h3>
+                </div>
+                <div class="thread__body">
+                  <p>A Stokes profile is a fingerprint with the field, the temperature and the velocity tangled together. I write inversion codes that untangle them: Milne–Eddington solved in batch on a GPU, node-based nonlinear least squares, and now physics-informed networks that return a whole atmosphere in a single pass.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">02</div>
+                <div class="thread__head">
+                  <h3>Learning the inverse problem</h3>
+                </div>
+                <div class="thread__body">
+                  <p>The inverse problem is expensive because it is iterative. A network trained on radiative-transfer solutions does not replace the physics; it makes the physics affordable, returning a full field of view without iterating per pixel.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">03</div>
+                <div class="thread__head">
+                  <h3>Magnetic-field extrapolation</h3>
+                </div>
+                <div class="thread__body">
+                  <p>The photosphere supplies a boundary condition and the corona supplies the consequences. Extrapolation lifts a measured surface field into the volume above it, force-free in the classical formulation and now learned with a physics-reinforced GAN.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">04</div>
+                <div class="thread__head">
+                  <h3>Data-constrained MHD</h3>
+                </div>
+                <div class="thread__body">
+                  <p>A simulation is only useful if it can be observed. I run MHD models of the global corona constrained by measured fields, and synthesise what an instrument would see, so that model and observation can be compared in the same units.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae27d1">ApJ 997, 228</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.3847/1538-4357/ae6f0d">ApJ 1004, 166</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">05</div>
+                <div class="thread__head">
+                  <h3>Coronal seismology</h3>
+                </div>
+                <div class="thread__body">
+                  <p>Loops oscillate, and the period carries density, field strength and geometry inside it. Spatial seismology turns that oscillation back into the parameters responsible for it: a measurement made of time instead of light.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202142711">A&amp;A 664, A48</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202346393">A&amp;A 678, A205</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+
+        <figure class="plate plate--wide plate--figure">
+          <div class="plate__media">
+            <picture>
+              <source srcset="assets/img/plate-stokes.webp" type="image/webp">
+              <img src="assets/img/plate-stokes.jpg" width="1800" height="1132" loading="lazy" decoding="async"
+                   alt="A four by four grid of maps: rows show observations from the Hinode SpectroPolarimeter and the corresponding synthetic maps from the inversion, for the 6301.5 and 6302.5 angstrom lines; columns show Stokes I, Q, U and V.">
+            </picture>
+          </div>
+          <div class="plate__no"><b>Plate II</b><span>Stokes maps</span></div>
+          <figcaption>Rows: Hinode/SP observations, then the same maps synthesised by the inversion — for the Fe I lines at 6301.5 Å and 6302.5 Å. Columns: Stokes I, Q, U, V. The blue and red of the site are the signs of this figure. From Chen et al. 2026, <i>A&amp;A</i> <b>710</b>, A227.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv47-d" d="M0 38.1L10 38.9L20 38.6L30 39.2L31 39.5L32 39.8L33 40.3L34 40.9L35 41.6L36 42.4L37 43.3L38 44.4L39 45.5L40 46.8L41 48.1L42 49.4L43 50.7L44 51.7L45 52.4L46 52.7L47 52.4L48 51.2L49 49.2L50 46.2L51 42.2L52 37.4L53 33.0L54 29.5L55 26.9L56 25.2L57 24.5L58 24.3L59 24.8L60 25.6L61 26.6L62 27.8L63 29.0L64 30.2L65 31.3L66 32.3L67 33.2L68 34.0L69 34.7L70 35.3L71 35.8L72 36.2L80 37.8L90 37.6L100 36.9L110 37.3L120 38.0L130 37.9L140 37.8L150 38.6L160 39.1L170 38.5L180 38.2L190 38.7L200 38.5L210 38.5L211 38.7L212 39.0L213 39.3L214 39.8L215 40.3L216 41.0L217 41.8L218 42.7L219 43.7L220 44.8L221 45.9L222 47.2L223 48.4L224 49.6L225 50.7L226 51.6L227 52.2L228 52.4L229 52.0L230 51.0L231 49.3L232 46.7L233 43.3L234 39.2L235 34.8L236 30.9L237 27.7L238 25.3L239 23.8L240 22.9L241 22.6L242 22.9L243 23.5L244 24.3L245 25.3L246 26.5L247 27.6L248 28.8L249 29.9L250 30.9L251 31.9L252 32.7L253 33.5L254 34.2L255 34.8L256 35.3L257 35.8L260 36.9L270 38.3L280 38.1L290 38.1L300 38.9L310 39.0L320 38.3L330 38.1L340 38.5L350 37.9L360 37.1L370 37.3L380 37.8L390 37.3L400 37.2L410 38.1L418 39.8L419 40.3L420 41.1L421 42.0L422 43.3L423 44.8L424 46.5L425 48.3L426 50.1L427 51.6L428 52.2L429 51.5L430 49.0L431 44.3L432 37.7L433 31.3L434 26.9L435 24.7L436 24.3L437 25.1L438 26.7L439 28.6L440 30.6L441 32.4L442 34.0L443 35.3L444 36.3L445 37.1L450 38.9L460 38.8L470 38.0L480 38.0L490 38.2L500 37.5L510 36.9L520 37.4L530 37.8L540 38.1L542 38.8L543 39.3L544 40.1L545 41.1L546 42.3L547 43.8L548 45.4L549 47.1L550 48.6L551 49.8L552 50.2L553 49.5L554 47.2L555 43.1L556 37.5L557 32.2L558 28.5L559 26.6L560 26.1L561 26.7L562 27.9L563 29.5L564 31.2L565 32.7L566 34.1L567 35.3L568 36.2L569 36.9L570 37.4L580 38.2L590 38.5L600 39.0" pathLength="1"/>
+          <clipPath id="sv47-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv47-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv47-d" clip-path="url(#sv47-up)"/>
+        <use class="trace trace--red" href="#sv47-d" clip-path="url(#sv47-dn)"/>
+      </svg></div>
+
+    <!-- ================= selected papers ================= -->
+    <section class="section" id="papers">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>02</b>Publications</span>
+          </div>
+          <div class="section__title">
+            <h2>Selected papers</h2>
+            <p>Five of 10, chosen for what they show about the method. The full record, 2021–2026 and 4 as first author, carries abstracts and BibTeX.</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="pubs pubs--compact">
+
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202659270">A synergistic spectropolarimetric inversion via gradient-bias annealing and physics-informed neural networks</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Díaz Baso, C. J.</span>, <span class="au">Hao, Q.</span>, <span class="au">Ding, M. D.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 710, A227</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202659270" title="doi:10.1051/0004-6361/202659270"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202659270</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.3847/1538-4357/ae5108">A Novel Way for Extrapolating the Solar Magnetic Field with PRO-GAN</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Hao, Q.</span>, <span class="au">Ding, M.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">ApJ 1001, 96</span>
+            <a class="doi" href="https://doi.org/10.3847/1538-4357/ae5108" title="doi:10.3847/1538-4357/ae5108"><span class="lbl">doi</span><span class="id">10.3847/1538-4357/ae5108</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.3847/1538-4357/ae27d1">Data-constrained Magnetohydrodynamic Simulation of the Global Solar Corona Including Solar Wind Effects within 2.5 R☉</a></h3>
+          <p class="pub__authors"><span class="au">Li, Y.</span>, <span class="au"><b>Chen, G.</b></span>, <span class="au">Guo, J.</span>, <span class="au">Guo, Y.</span>, <span class="au">Wu, H.</span>, <span class="au">Huang, Y.</span>, <span class="au">Cheng, X.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Keppens, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">ApJ 997, 228</span>
+            <a class="doi" href="https://doi.org/10.3847/1538-4357/ae27d1" title="doi:10.3847/1538-4357/ae27d1"><span class="lbl">doi</span><span class="id">10.3847/1538-4357/ae27d1</span></a>
+          <a class="arxiv" href="https://arxiv.org/abs/2511.19975" title="arXiv:2511.19975"><span class="lbl">arXiv</span><span class="id">2511.19975</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202346393">Measuring local physical parameters in coronal loops with spatial seismology</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Erdélyi, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 678, A205</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202346393" title="doi:10.1051/0004-6361/202346393"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202346393</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202142711">Coronal loop kink oscillation periods derived from the information of density, magnetic field, and loop geometry</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Chen, L. Y.</span>, <span class="au">Guo, Y.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Chen, P. F.</span>, <span class="au">Erdélyi, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 664, A48</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202142711" title="doi:10.1051/0004-6361/202142711"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202142711</span></a>
+          </div>
+        </article>
+
+            </div>
+            <div class="pub-list-foot mono">
+              <a href="publications.html">All 10 publications <span aria-hidden="true">→</span></a>
+              <a href="https://orcid.org/0000-0001-9610-0433">ORCID record</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv92-d" d="M0 39.0L10 38.2L20 38.1L30 38.4L40 37.8L50 37.1L60 38.3L62 38.9L63 39.2L64 39.6L65 40.1L66 40.6L67 41.2L68 41.8L69 42.5L70 43.3L71 44.1L72 45.0L73 45.9L74 46.8L75 47.8L76 48.7L77 49.6L78 50.3L79 50.9L80 51.3L81 51.4L82 51.2L83 50.5L84 49.4L85 47.7L86 45.4L87 42.5L88 39.2L89 35.5L90 32.2L91 29.3L92 27.1L93 25.5L94 24.4L95 23.8L96 23.7L97 24.0L98 24.5L99 25.3L100 26.2L101 27.2L102 28.3L103 29.3L104 30.4L105 31.4L106 32.3L107 33.2L108 33.9L109 34.6L110 35.2L111 35.7L112 36.2L113 36.5L114 36.8L115 37.1L120 37.7L130 38.4L140 39.1L150 38.7L160 37.9L170 38.7L173 39.6L174 40.0L175 40.5L176 41.0L177 41.6L178 42.4L179 43.2L180 44.1L181 45.1L182 46.1L183 47.3L184 48.5L185 49.7L186 50.9L187 52.0L188 52.9L189 53.6L190 53.9L191 53.8L192 53.0L193 51.6L194 49.4L195 46.3L196 42.5L197 37.9L198 33.1L199 29.0L200 25.7L201 23.2L202 21.6L203 20.7L204 20.4L205 20.7L206 21.4L207 22.4L208 23.7L209 25.0L210 26.4L211 27.7L212 29.0L213 30.3L214 31.4L215 32.4L216 33.3L217 34.1L218 34.8L219 35.3L220 35.8L221 36.2L230 37.3L240 37.7L250 38.7L260 38.8L270 38.3L280 38.6L290 39.0L300 38.3L310 37.5L320 37.8L330 37.8L340 37.1L350 37.0L360 37.8L370 38.0L380 37.7L390 38.2L400 39.2L408 40.3L409 40.6L410 41.0L411 41.5L412 42.1L413 42.8L414 43.6L415 44.5L416 45.6L417 46.7L418 47.8L419 48.9L420 49.9L421 50.6L422 51.1L423 51.0L424 50.3L425 48.9L426 46.6L427 43.5L428 39.5L429 35.3L430 31.8L431 29.0L432 27.2L433 26.2L434 25.8L435 26.1L436 26.7L437 27.6L438 28.6L439 29.8L440 30.9L441 32.0L442 32.9L443 33.8L444 34.5L445 35.2L446 35.7L447 36.1L448 36.4L450 36.8L460 37.2L470 37.7L480 37.6L490 37.0L500 37.3L510 38.2L520 38.2L530 37.9L540 38.6L550 39.1L560 38.6L570 38.1L580 38.4L590 38.3L600 37.3" pathLength="1"/>
+          <clipPath id="sv92-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv92-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv92-d" clip-path="url(#sv92-up)"/>
+        <use class="trace trace--red" href="#sv92-d" clip-path="url(#sv92-dn)"/>
+      </svg></div>
+
+    <!-- ================= software ================= -->
+    <section class="section" id="code">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>03</b>Software</span>
+          </div>
+          <div class="section__title">
+            <h2>Instruments</h2>
+            <p>The codes behind the papers, and the small tools that keep the literature readable while the papers get written.</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body section__body--full">
+            <div class="projects">
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  <span class="project__domain mono">Inversion · Python</span>
+                </div>
+                <p>PyTorch library for Stokes IQUV spectral synthesis and inversion, with a pretrained neural-operator solver.</p>
+                <div class="project__foot mono"><span>v1.2.0</span><span>PyTorch</span><span>Synthesis</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                  <span class="project__domain mono">Inversion · CUDA</span>
+                </div>
+                <p>GPU-batched Milne–Eddington inversion of solar Stokes profiles with gradient-bias annealing and a physics-informed network.</p>
+                <div class="project__foot mono"><span>Jupyter</span><span>Batched solve</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  <span class="project__domain mono">Extrapolation · Python</span>
+                </div>
+                <p>Physics-reinforced GAN that extrapolates a photospheric boundary into a 3D nonlinear force-free magnetic field.</p>
+                <div class="project__foot mono"><span>v2.0.0</span><span>MIT</span><span>GAN</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/arxiv-checkup">arxiv-checkup</a>
+                  <span class="project__domain mono">Tooling · agent skill</span>
+                </div>
+                <p>Agent skill that watches chosen arXiv categories and files relevant new papers into a three-level Zotero tree.</p>
+                <div class="project__foot mono"><span>v0.1.1</span><span>MIT</span><span>Zotero</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/zotnote">zotnote</a>
+                  <span class="project__domain mono">Tooling · agent skill</span>
+                </div>
+                <p>Agent skill that turns Zotero PDFs into illustrated Markdown reading notes mirrored into an Obsidian vault.</p>
+                <div class="project__foot mono"><span>v0.6.0</span><span>MIT</span><span>Obsidian</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/dsh-overleaf">dsh-overleaf</a>
+                  <span class="project__domain mono">Tooling · editor</span>
+                </div>
+                <p>Overleaf workbench embedded as a fourth session tab in DeepSeek Harness Web, with selection quoting and caret insertion.</p>
+                <div class="project__foot mono"><span>v1.0.1</span><span>MIT</span><span>JavaScript</span></div>
+              </article>
+
+            </div>
+
+            <p class="also mono">Everything else, agent skills and editor plugins, lives on <a href="https://github.com/gychen-NJU?tab=repositories">GitHub</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv133-d" d="M0 38.6L10 38.3L20 37.3L30 37.3L40 37.8L50 37.4L60 37.0L70 37.8L80 39.0L85 40.0L86 40.3L87 40.7L88 41.2L89 41.8L90 42.4L91 43.2L92 44.0L93 45.0L94 46.1L95 47.2L96 48.4L97 49.6L98 50.8L99 51.9L100 52.9L101 53.7L102 54.1L103 54.1L104 53.5L105 52.4L106 50.5L107 47.8L108 44.4L109 40.3L110 36.0L111 32.1L112 28.9L113 26.5L114 24.8L115 23.8L116 23.3L117 23.4L118 23.9L119 24.6L120 25.5L121 26.6L122 27.7L123 28.8L124 29.9L125 31.0L126 31.9L127 32.8L128 33.6L129 34.2L130 34.8L131 35.3L132 35.8L133 36.2L140 37.7L150 38.4L160 37.8L170 37.0L180 37.3L190 37.8L200 37.3L210 37.3L220 38.2L230 38.7L240 38.2L250 38.4L260 39.1L270 38.7L280 37.9L290 37.9L300 38.1L310 37.4L320 37.1L326 38.5L327 38.9L328 39.4L329 40.0L330 40.7L331 41.5L332 42.4L333 43.3L334 44.4L335 45.6L336 46.8L337 48.0L338 49.1L339 50.1L340 50.9L341 51.3L342 51.2L343 50.6L344 49.2L345 47.0L346 43.9L347 40.0L348 35.7L349 31.7L350 28.5L351 26.2L352 24.8L353 24.0L354 23.9L355 24.3L356 25.1L357 26.1L358 27.3L359 28.5L360 29.7L361 31.0L362 32.1L363 33.1L364 34.1L365 34.9L366 35.6L367 36.3L368 36.8L370 37.6L380 38.7L390 38.3L400 38.5L410 39.0L420 38.3L430 37.5L440 37.8L450 37.9L460 37.1L470 37.0L480 37.8L490 38.1L498 38.7L499 39.0L500 39.3L501 39.8L502 40.3L503 40.9L504 41.6L505 42.4L506 43.3L507 44.3L508 45.2L509 46.2L510 47.1L511 47.9L512 48.4L513 48.6L514 48.3L515 47.4L516 45.9L517 43.7L518 40.9L519 37.6L520 34.6L521 32.2L522 30.5L523 29.4L524 29.0L525 28.9L526 29.3L527 29.8L528 30.6L529 31.4L530 32.2L531 33.1L532 33.8L533 34.5L534 35.2L535 35.7L536 36.2L537 36.6L538 36.9L539 37.1L540 37.4L550 38.5L560 38.7L570 37.8L580 37.3L590 37.7L600 37.7" pathLength="1"/>
+          <clipPath id="sv133-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv133-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv133-d" clip-path="url(#sv133-up)"/>
+        <use class="trace trace--red" href="#sv133-d" clip-path="url(#sv133-dn)"/>
+      </svg></div>
+
+    <!-- ================= about ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>04</b>About</span>
+          </div>
+          <div class="section__title">
+            <h2>Between the observation and the model</h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>I am a solar physicist working between the observation and the model. The instrument measures polarisation; the atmosphere answers with a magnetic field, a temperature and a line-of-sight velocity. Everything I do is an attempt to get from the first to the second without losing the physics on the way.</p>
+            <p>My training is in astronomy at Nanjing University, where the coronal-seismology work began. At the Rosseland Centre for Solar Physics I work on inversion, extrapolation and radiation synthesis for data-constrained MHD models of the corona.</p>
+            <p>The codes are public, SPOT and CuSP for inversion and PF2nlfff for extrapolation, because a diagnostic is only as reproducible as the code that produces it and because the fastest way to be corrected is to publish the tool.</p>
+          </div>
+
+          <aside class="about__side">
+            <dl class="deflist mono">
+              <div>
+                <dt>Position</dt>
+                <dd>Guest Researcher</dd>
+              </div>
+              <div>
+                <dt>Centre</dt>
+                <dd>Rosseland Centre for Solar Physics</dd>
+              </div>
+              <div>
+                <dt>Institute</dt>
+                <dd>Institute of Theoretical Astrophysics, University of Oslo</dd>
+              </div>
+              <div>
+                <dt>Also at</dt>
+                <dd>School of Astronomy and Space Science, Nanjing University</dd>
+              </div>
+              <div>
+                <dt>Field</dt>
+                <dd>Spectropolarimetry · MHD · machine learning</dd>
+              </div>
+              <div>
+                <dt>ORCID</dt>
+                <dd><a href="https://orcid.org/0000-0001-9610-0433">0000-0001-9610-0433</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Oslo, Norway</dd>
+              </div>
+            </dl>
+            <p class="side-note">
+              <span class="mono">Open to</span>
+              Collaboration on inversion, extrapolation, learned solvers, and any dataset where the observed profile and the computed one disagree.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= contact ================= -->
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="contact__head">
+          <h2>Correspondence</h2>
+          <p>For collaborations, data, or code that does not run as documented.</p>
+        </div>
+        <div class="contact__mail">
+          <a class="mail" href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+        </div>
+        <div class="contact__links mono">
+          <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+          <a href="https://github.com/gychen-NJU">GitHub</a>
+          <a href="https://www.researchgate.net/profile/Guoyin-Chen-2">ResearchGate</a>
+          <a href="https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html">University of Oslo</a>
+          <a href="https://arxiv.org/search/?query=Guoyin+Chen&searchtype=author">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="colophon mono">
+        <p>Set in Spectral and Fragment Mono. The publication record is generated from ORCID and cross-checked against Crossref; author order and DOIs are as published. Hand-written HTML and CSS, no framework.</p>
+        <p class="colophon__right">Blue and red are the polarity colours of a Stokes magnetogram.<br>Last built 2026-11-05.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

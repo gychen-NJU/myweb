@@ -1,0 +1,12 @@
+# working files - not part of the published site
+data/_tmp/
+data/cache/
+data/_*.js
+data/github-profile.html
+data/publications.json
+.impeccable/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

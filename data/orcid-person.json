@@ -1,0 +1,95 @@
+﻿{
+    "last-modified-date":  {
+                               "value":  1789257220911
+                           },
+    "name":  {
+                 "created-date":  {
+                                      "value":  1619251504113
+                                  },
+                 "last-modified-date":  {
+                                            "value":  1619251504113
+                                        },
+                 "given-names":  {
+                                     "value":  "Guoyin"
+                                 },
+                 "family-name":  {
+                                     "value":  "Chen"
+                                 },
+                 "credit-name":  null,
+                 "source":  null,
+                 "visibility":  "public",
+                 "path":  "0000-0001-9610-0433"
+             },
+    "other-names":  {
+                        "last-modified-date":  {
+                                                   "value":  1789257220911
+                                               },
+                        "other-name":  [
+                                           {
+                                               "created-date":  {
+                                                                    "value":  1789257220911
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1789257220911
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "content":  "陈国银",
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/other-names/2283615",
+                                               "put-code":  2283615,
+                                               "display-index":  1
+                                           }
+                                       ],
+                        "path":  "/0000-0001-9610-0433/other-names"
+                    },
+    "biography":  null,
+    "researcher-urls":  {
+                            "last-modified-date":  null,
+                            "researcher-url":  [
+
+                                               ],
+                            "path":  "/0000-0001-9610-0433/researcher-urls"
+                        },
+    "emails":  {
+                   "last-modified-date":  null,
+                   "email":  [
+
+                             ],
+                   "path":  "/0000-0001-9610-0433/email"
+               },
+    "addresses":  {
+                      "last-modified-date":  null,
+                      "address":  [
+
+                                  ],
+                      "path":  "/0000-0001-9610-0433/address"
+                  },
+    "keywords":  {
+                     "last-modified-date":  null,
+                     "keyword":  [
+
+                                 ],
+                     "path":  "/0000-0001-9610-0433/keywords"
+                 },
+    "external-identifiers":  {
+                                 "last-modified-date":  null,
+                                 "external-identifier":  [
+
+                                                         ],
+                                 "path":  "/0000-0001-9610-0433/external-identifiers"
+                             },
+    "path":  "/0000-0001-9610-0433/person"
+}

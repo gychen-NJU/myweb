@@ -1,0 +1,38 @@
+[
+  {
+    "name": "SPOT",
+    "href": "/gychen-NJU/SPOT",
+    "desc": "Integrated Stokes spectral synthesis and inversion library (forward synthesis, response functions, node-based LM/CMA-ES inversion, neural-operator network inversion)",
+    "lang": "Python"
+  },
+  {
+    "name": "CuSP",
+    "href": "/gychen-NJU/CuSP",
+    "desc": "Cuda-supported SpectralPolarimetry inversion code",
+    "lang": "Jupyter Notebook"
+  },
+  {
+    "name": "arxiv-checkup",
+    "href": "/gychen-NJU/arxiv-checkup",
+    "desc": "arXiv literature monitor + Zotero archival pipeline as an agent skill (SKILL.md): incremental arXiv search by category, AI abstract screening, three-level Zotero collections",
+    "lang": "JavaScript"
+  },
+  {
+    "name": "dsh-overleaf",
+    "href": "/gychen-NJU/dsh-overleaf",
+    "desc": "Embedded Overleaf workbench tab for DeepSeek Harness Web: same-origin reverse proxy, direct-CDP login, selection quoting, caret insertion, LaTeX assist panel",
+    "lang": "JavaScript"
+  },
+  {
+    "name": "zotnote",
+    "href": "/gychen-NJU/zotnote",
+    "desc": "Zotero deep-reading notes generator: extract sections and figures from selected Zotero PDFs, build illustrated Markdown reading notes, mirror into Obsidian Vault for knowledge graph",
+    "lang": "JavaScript"
+  },
+  {
+    "name": "PF2nlfff",
+    "href": "/gychen-NJU/PF2nlfff",
+    "desc": "Code for the PF2nlfff projection",
+    "lang": "Python"
+  }
+]

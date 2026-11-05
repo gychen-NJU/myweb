@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2026-11-05T20:16:48.941Z",
+  "source": "GitHub REST API v2022-11-28 (unauthenticated), repo metadata + languages + README + latest release",
+  "owner": {
+    "login": "gychen-NJU",
+    "url": "https://github.com/gychen-NJU",
+    "publicRepos": 26
+  },
+  "projects": [
+    {
+      "name": "SPOT",
+      "slug": "spot",
+      "url": "https://github.com/gychen-NJU/SPOT",
+      "oneLiner": "PyTorch library for Stokes IQUV spectral synthesis and inversion, with a pretrained neural-operator solver.",
+      "summary": "A Python/PyTorch library that implements LTE line-formation physics — opacity, Zeeman line profiles and radiative-transfer solvers — to synthesise Stokes I, Q, U, V for arbitrary atmosphere models, vectorised over batches on CPU or CUDA. Inversion comes in three interchangeable forms: node-parameterised Levenberg–Marquardt with damped SVD, derivative-free CMA-ES for initial-guess search, and a pretrained neural operator (FNO + Transformer + DeepONet-style decoder) that inverts Hinode SP profiles in a single call. The shipped default chains the network guess into a four-cycle node LM run, reaching χ² ≈ 0.05–0.06 on the Hinode SP test case in about 130 s.",
+      "highlights": [
+        "Forward synthesis of Stokes IQUV for arbitrary atmospheres, line lists and wavelength grids, batched on CPU or CUDA",
+        "Response functions dI/dx via autograd, finite differences or analytic chain rule; the default `fast` method is exact and cheap",
+        "Three inversion routes: node-parameterised LM (damped SVD), batched CMA-ES, and neural-operator network inversion",
+        "Default flow (network guess → 4-cycle node LM) reaches χ² ≈ 0.05–0.06 in ~130 s versus ~2500 s for the traditional preset-guess flow",
+        "Bundles preset atmospheres (hot11, cool11, falc11, hsra11, …), a line list, and the hinode_sp v3 network trained on 2.36M BIFROST atmospheres"
+      ],
+      "usage": "pip install -e . , then `Inversion().invert(wavs, ltau, target)` — defaults already pick the network guess plus four LM cycles.",
+      "language": "Python",
+      "languages": {
+        "Python": 100
+      },
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "topics": [],
+      "license": null,
+      "createdAt": "2026-09-03T23:52:21Z",
+      "pushedAt": "2026-09-12T21:44:32Z",
+      "defaultBranch": "main",
+      "size": 59967,
+      "archived": false,
+      "latestRelease": {
+        "tag": "v1.2.0",
+        "name": "SPOT v1.2.0 — new bundled network model (v3, 50 epochs)",
+        "publishedAt": "2026-09-12T21:24:04Z"
+      },
+      "readmeExcerpt": "SPOT Spectrapolarimetric Operator Transformer — a PyTorch-based library for Stokes IQUV spectral synthesis and inversion (with a neural-operator subpackage) English | 简体中文 Overview spot is a Python library for solar Stokes (polarized) spectral synthesis and inversion. It implements the LTE line-formation physics (opacity, Zeeman line profiles, radiative-transfer solvers, etc.) in pure Python /…",
+      "domain": "spectropolarimetry",
+      "licenseNote": "README declares MIT, but the GitHub API reports no detected license file."
+    },
+    {
+      "name": "CuSP",
+      "slug": "cusp",
+      "url": "https://github.com/gychen-NJU/CuSP",
+      "oneLiner": "GPU-batched Milne–Eddington inversion of solar Stokes profiles with gradient-bias annealing and a physics-informed network.",
+      "summary": "A PyTorch toolkit for Milne–Eddington inversion of solar spectropolarimetric data, built on a fully differentiable, vectorised Unno–Rachkovsky forward model of the Stokes vector IQUV. It ships four interchangeable batched inversions — CMA-ES, gradient-bias annealing, Levenberg–Marquardt and conjugate SA — plus fast Voigt and Faraday–Voigt profiles from a rational approximation of the Faddeeva function, so no numerical quadrature is needed. A shipped PI2NN network supplies SDO/HMI Fe I 6173 Å initial guesses, letting inversion start from a learned estimate rather than random noise; the code accompanies Chen et al., A&A 710, A227 (2026).",
+      "highlights": [
+        "Fully differentiable, vectorised ME forward synthesis of Stokes IQUV on CPU or CUDA",
+        "Four batched inversion methods: CMA-ES (default), gradient-bias annealing (the paper's GBA), Levenberg–Marquardt, conjugate SA",
+        "Vectorised response functions give the LM Jacobian in one backward pass per Stokes component, independent of wavelength sampling",
+        "Fast Voigt / Faraday–Voigt profiles from a 7/7 complex rational approximation of the Faddeeva function",
+        "Shipped PI2NN initial-guess network for SDO/HMI Fe I 6173 Å spectra, selectable as `initial_guess=\"sdo_hmi\"`"
+      ],
+      "usage": "pip install -e . , then `MEInversion(wavebands, …)` and call it on continuum-normalised IQUV, optionally with `initial_guess=\"sdo_hmi\"`.",
+      "language": "Jupyter Notebook",
+      "languages": {
+        "Jupyter Notebook": 59.6,
+        "Python": 40.4
+      },
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 0,
+      "topics": [],
+      "license": null,
+      "createdAt": "2025-04-25T10:26:05Z",
+      "pushedAt": "2026-09-11T18:01:26Z",
+      "defaultBranch": "main",
+      "size": 1869,
+      "archived": false,
+      "latestRelease": null,
+      "readmeExcerpt": "CuSP — Cuda-supported SpectroPolarimetry English | 中文 Paper. CuSP accompanies A synergistic spectropolarimetric inversion via gradient-bias annealing and physics-informed neural networks, by G. Y. Chen, Y. Guo, C. J. Díaz Baso, Q. Hao & M. D. Ding, A&A 710, A227 (2026) — DOI 10.1051/0004-6361/202659270 (open access, CC BY 4.0). Please cite it if you use this code; a ready-to-paste BibTeX entry is…",
+      "domain": "spectropolarimetry",
+      "licenseNote": "No license declared in the repository or README."
+    },
+    {
+      "name": "arxiv-checkup",
+      "slug": "arxiv-checkup",
+      "url": "https://github.com/gychen-NJU/arxiv-checkup",
+      "oneLiner": "Agent skill that watches chosen arXiv categories and files relevant new papers into a three-level Zotero tree.",
+      "summary": "An agent skill (SKILL.md) that incrementally queries arXiv by category and submission-date window, screens each new title and abstract against the user's stated research areas, and files the relevant ones into Zotero. Entries land in a three-level collection tree — research topic / YYYYMM / first author — and carry an `arxiv:<id>` tag for deduplication and provenance. A state file records `lastRun` and the set of seen IDs, so consecutive runs neither repeat papers nor miss the month boundary.",
+      "highlights": [
+        "Configurable arXiv group → archive → category selection instead of a hard-wired field",
+        "AI abstract screening against free-text research areas, which also names the topic collection",
+        "Creates the Zotero tree as `[root] / topic / YYYYMM / author` and tags items `arxiv:<id>`",
+        "Incremental state (lastRun + seen IDs) with a one-day lookback buffer for arXiv indexing lag",
+        "Zero-dependency Node ≥ 22 scripts with a bundled offline taxonomy.json"
+      ],
+      "usage": "Install into a skills directory and ask the agent to run a checkup, or drive `scripts/arxiv.mjs` and `scripts/zotero.mjs` directly.",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 100
+      },
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-22T02:06:40Z",
+      "pushedAt": "2026-08-23T11:05:32Z",
+      "defaultBranch": "main",
+      "size": 68,
+      "archived": false,
+      "latestRelease": {
+        "tag": "v0.1.1",
+        "name": "arxiv-checkup v0.1.1",
+        "publishedAt": "2026-08-22T17:03:00Z"
+      },
+      "readmeExcerpt": "arxiv-checkup English · 中文 arXiv 文献监测 + Zotero 归档流水线（Agent Skill）：定期增量检索你选定的 arXiv 分区， AI 逐篇阅读摘要按研究方向筛选，把相关文章写入 Zotero 并按 研究方向 / 年月(YYYYMM) / 作者 三级分类目录归档，两次检索之间自动衔接。 ✨ 特性 开放的分区配置：安装后智能体先询问你的 一级分区（group）（Physics / Mathematics / Computer Science / …）、 二级分区（archive）（Astrophysics / Condensed Matter / General Relativity and Quantum Cosmology / …）、 三级分区（category）（High Energy Astrophysical Phenomena /…",
+      "domain": "research-tooling"
+    },
+    {
+      "name": "dsh-overleaf",
+      "slug": "dsh-overleaf",
+      "url": "https://github.com/gychen-NJU/dsh-overleaf",
+      "oneLiner": "Overleaf workbench embedded as a fourth session tab in DeepSeek Harness Web, with selection quoting and caret insertion.",
+      "summary": "A DeepSeek Harness Web plugin that adds an Overleaf tab beside Chat / Trajectory / Context, loading overleaf.com or a self-hosted instance through a same-origin reverse proxy running inside the DSH host process. Overleaf sends X-Frame-Options and CSP frame-ancestors, so a plain iframe is refused; the proxy strips those headers and rebases links so the editor, compiler and PDF preview stay fully operable beneath the native composer. Sharing one origin also makes browser-level bridges possible — text selections flow out as structured quotes and generated LaTeX is written back at the editor caret.",
+      "highlights": [
+        "Same-origin HTTP/1.1 reverse proxy locked to one configured upstream — no open SSRF surface",
+        "Full Overleaf editing, compiling and PDF preview inside a session tab, with the DSH composer untouched",
+        "Selection quoting through DSH's reference pipeline, plus agent output inserted at the CodeMirror caret after review",
+        "Assist panel with AI insert, reviewed selection rewrite, compile-log fixes and outline navigation",
+        "Bidirectional .tex and .bib sync guarded by document-ID, revision, snapshot and save-event checks"
+      ],
+      "usage": "dsh plugin --profile web add github:gychen-NJU/dsh-overleaf , then restart the web service once.",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 59.85,
+        "TypeScript": 40.11,
+        "TeX": 0.04
+      },
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 1,
+      "topics": [
+        "deepseek-harness",
+        "dsh-plugin"
+      ],
+      "license": "MIT",
+      "createdAt": "2026-08-27T12:46:01Z",
+      "pushedAt": "2026-09-29T23:38:34Z",
+      "defaultBranch": "main",
+      "size": 3655,
+      "archived": false,
+      "latestRelease": {
+        "tag": "v1.0.1",
+        "name": "dsh-overleaf v1.0.1 (desktop)",
+        "publishedAt": "2026-09-29T23:38:16Z"
+      },
+      "readmeExcerpt": "dsh-overleaf English | 中文 An embedded Overleaf workbench plugin for DeepSeek Harness (DSH) Web. It adds a fourth tab next to Chat / Trajectory / Context on the session page: the tab loads your Overleaf site (public cloud or self-hosted such as https://tex.nju.edu.cn) through a same-origin reverse proxy, so the page renders and stays fully operable — editing, compiling, PDF preview — while the…",
+      "domain": "developer-tooling"
+    },
+    {
+      "name": "zotnote",
+      "slug": "zotnote",
+      "url": "https://github.com/gychen-NJU/zotnote",
+      "oneLiner": "Agent skill that turns Zotero PDFs into illustrated Markdown reading notes mirrored into an Obsidian vault.",
+      "summary": "An agent skill that takes a Zotero item, resolves its PDF (local storage first, Web API as fallback), and extracts both the section structure and every figure and table together with its caption. It then writes a section-by-section Markdown reading note with YAML frontmatter, placing each figure under the section it belongs to, and mirrors the Zotero collection tree into an Obsidian vault so the notes join the knowledge graph. Sections are detected by font-size clustering combined with numbering and heading-vocabulary tests, and figures are located from caption-anchored bounding boxes.",
+      "highlights": [
+        "Section detection by font-size clustering plus numbering pattern and heading vocabulary, filtering false headings",
+        "Caption-aware figure and table extraction: embedded bitmaps, vector bounding boxes, and a manual `crop` fallback",
+        "Figures are mapped to their section by PDF page, so the explanation sits under the right subsection",
+        "Obsidian output mirrors the Zotero collection path, with zotero://select and web links in the frontmatter",
+        "Batch mode walks a whole collection and skips notes that already exist, making runs idempotent and resumable"
+      ],
+      "usage": "node scripts/run.mjs --key <ZOTERO-KEY> for one paper, or scripts/batch.mjs --collection <name> --recursive for a whole library folder.",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 79.2,
+        "Python": 20.8
+      },
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2026-08-22T03:28:10Z",
+      "pushedAt": "2026-08-25T16:19:44Z",
+      "defaultBranch": "main",
+      "size": 5485,
+      "archived": false,
+      "latestRelease": {
+        "tag": "v0.6.0",
+        "name": "zotnote v0.6.0 - Figures Follow Sections",
+        "publishedAt": "2026-08-25T16:20:30Z"
+      },
+      "readmeExcerpt": "zotnote 📚 — Zotero 精读笔记生成器 English: README.en.md zotnote 是一个面向科研文献管理的 Agent Skill（DeepSeek Harness / Claude Code 等兼容 SKILL.md 的智能体通用）：从你的 Zotero 文库中挑选指定文章，自动提取 PDF 的章节结构与全部图表（含题注），生成图文并茂、逐节精读、带 YAML frontmatter 的 Markdown 笔记，并按 Zotero 文库目录结构镜像写入 Obsidian Vault，直接接入知识图谱与文献关系网络。 🖼️ 效果展示 下图是 Obsidian 中一篇精读笔记的真实效果截图： ⚠️ 注意：上面截图只是完整笔记的一个片段（速览/归纳部分），仅用于快速展示 整体观感。该笔记的完整效果（逐节精读、全部图表详解、LaTeX 公式、关联笔记等）…",
+      "domain": "research-tooling"
+    },
+    {
+      "name": "PF2nlfff",
+      "slug": "pf2nlfff",
+      "url": "https://github.com/gychen-NJU/PF2nlfff",
+      "oneLiner": "Physics-reinforced GAN that extrapolates a photospheric boundary into a 3D nonlinear force-free magnetic field.",
+      "summary": "Code for the PF2nlfff projection: given a three-component photospheric boundary field, it runs potential-field extrapolation and a fast reconstruction, then — when a training config is supplied — retrains a physics-reinforced GAN that enforces divergence-free and force-free consistency across the reconstructed volume. The method is presented in the accompanying ApJ paper, and the potential, fast and network fields are returned side by side for comparison. An optional extra renders the resulting 3D field as volume images.",
+      "highlights": [
+        "Potential, rapid and physics-reinforced neural extrapolation in one pipeline call",
+        "Physics losses for divergence-free (L_div), force-free (L_ff) and longitudinal-field consistency, with a configurable schedule",
+        "Accepts any user-supplied (3, nx, ny) boundary array, not only the bundled Lou & Low test model",
+        "Returns three fields side by side — `res.PF`, `res.fast`, `res.nn` — for direct comparison",
+        "Optional `[visual]` extra renders 3D volume images; archived on Zenodo with a DOI"
+      ],
+      "usage": "pip install . , then `PROGAN(bound_tensor, device=\"cuda:1\")(nz=…)`; omit nn_config to skip the neural retraining stage.",
+      "language": "Python",
+      "languages": {
+        "Python": 100
+      },
+      "stars": 1,
+      "forks": 1,
+      "openIssues": 0,
+      "topics": [],
+      "license": "MIT",
+      "createdAt": "2023-12-13T22:15:34Z",
+      "pushedAt": "2026-08-16T16:14:35Z",
+      "defaultBranch": "frozen",
+      "size": 419994,
+      "archived": false,
+      "latestRelease": {
+        "tag": "v2.0.0",
+        "name": "PROGAN",
+        "publishedAt": "2026-03-12T01:23:45Z"
+      },
+      "readmeExcerpt": "PF2nlfff Physics-Reinforced Generative Adversarial Network (PRO-GAN) for extrapolation The design, test, and application of PRO-GAN can be found in this paper. Installation Install the one with basic functions To install the one with additional visualization module, please run Or install the version with full module Usage Load the samples Extrapolation starts from the bottom boundary to…",
+      "domain": "magnetic-field-extrapolation"
+    }
+  ],
+  "otherRepos": [
+    {
+      "name": "dsh-game-daily",
+      "url": "https://github.com/gychen-NJU/dsh-game-daily",
+      "description": "DSH 桌面端插件：游戏日常代理（原神 / 崩坏3 / 星穹铁道）—设置页逐游戏开关、排班、计划任务自动执行并汇报 | DSH plugin for daily game automation",
+      "language": "JavaScript",
+      "stars": 40,
+      "pushedAt": "2026-11-02T15:56:29Z"
+    },
+    {
+      "name": "game-daily",
+      "url": "https://github.com/gychen-NJU/game-daily",
+      "description": "Agent skills: daily routines for miHoYo games (Honkai Impact 3 / Honkai: Star Rail) with calibratable coordinates, screen recognition and three execution adapters",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-29T22:17:45Z"
+    },
+    {
+      "name": "bettergi-control",
+      "url": "https://github.com/gychen-NJU/bettergi-control",
+      "description": "BetterGI control skill for AI agents: 15 PowerShell scripts for daily automation, config, results and diagnostics",
+      "language": "PowerShell",
+      "stars": 0,
+      "pushedAt": "2026-10-26T09:19:38Z"
+    },
+    {
+      "name": "bettergi-mcp",
+      "url": "https://github.com/gychen-NJU/bettergi-mcp",
+      "description": "BetterGI MCP server — 29 tools to drive the BetterGI daily automation from DeepSeek Harness / Claude Code (single-file, zero dependencies)",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-10-23T21:27:01Z"
+    },
+    {
+      "name": "dsh-logwiki",
+      "url": "https://github.com/gychen-NJU/dsh-logwiki",
+      "description": "DSH 任务日历 + Wiki 插件：热力图看工作量、按来源/工作区的任务卡片、周月简报。零构建手写 ESM。",
+      "language": "JavaScript",
+      "stars": 1,
+      "pushedAt": "2026-10-01T23:40:02Z"
+    },
+    {
+      "name": "fanfill-video-pipeline",
+      "url": "https://github.com/gychen-NJU/fanfill-video-pipeline",
+      "description": "Reusable pipeline for turning a song + rewritten lyrics into a cover master and an AI-generated PV: 8-9 config-driven scripts, a DSH skill, and a read-only workbench panel.",
+      "language": "JavaScript",
+      "stars": 0,
+      "pushedAt": "2026-09-29T18:45:17Z"
+    },
+    {
+      "name": "f2a-ssh",
+      "url": "https://github.com/gychen-NJU/f2a-ssh",
+      "description": "Agent skill: connect 2FA-protected SSH servers via WSL OpenSSH ControlMaster (DeepSeek Harness / Claude Code)",
+      "language": "Shell",
+      "stars": 0,
+      "pushedAt": "2026-08-20T23:37:20Z"
+    },
+    {
+      "name": "CuQSL",
+      "url": "https://github.com/gychen-NJU/CuQSL",
+      "description": "Computing the QSL base on cuda",
+      "language": "Python",
+      "stars": 1,
+      "pushedAt": "2025-10-08T15:25:59Z"
+    },
+    {
+      "name": "radsyn_tools",
+      "url": "https://github.com/gychen-NJU/radsyn_tools",
+      "description": "An analytic tool for AMRVAC simulation data with the yt repository",
+      "language": "Python",
+      "stars": 2,
+      "pushedAt": "2025-07-08T01:58:08Z"
+    }
+  ]
+}

@@ -1,0 +1,1197 @@
+﻿{
+    "last-modified-date":  {
+                               "value":  1781598002586
+                           },
+    "group":  [
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1781193100491
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ae6f0d",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ae6f0d",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ae6f0d"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  217418235,
+                                               "created-date":  {
+                                                                    "value":  1781193100491
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1781193100491
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Radiation Synthesis Tools: Arbitrary Perspective Multiwavelength Radiation Synthesis for Solar Magnetohydrodynamic Simulations"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ae6f0d",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ae6f0d",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ae6f0d"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.3847/1538-4357/ae6f0d"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2026"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "06"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "20"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/217418235",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1781598002586
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.1051/0004-6361/202659270",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.1051/0004-6361/202659270",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.1051/0004-6361/202659270"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  217800545,
+                                               "created-date":  {
+                                                                    "value":  1781598002586
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1781598002586
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "A synergistic spectropolarimetric inversion via gradient-bias annealing and physics-informed neural networks"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1051/0004-6361/202659270",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1051/0004-6361/202659270",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1051/0004-6361/202659270"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.1051/0004-6361/202659270"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2026"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "06"
+                                                                                  },
+                                                                        "day":  null
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Astronomy \u0026 Astrophysics"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/217800545",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1775550094565
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ae5108",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ae5108",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ae5108"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  210909254,
+                                               "created-date":  {
+                                                                    "value":  1775550094565
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1775550094565
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "A Novel Way for Extrapolating the Solar Magnetic Field with PRO-GAN"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ae5108",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ae5108",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ae5108"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.3847/1538-4357/ae5108"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2026"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "04"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "10"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/210909254",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1769504371557
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ae27d1",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ae27d1",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ae27d1"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  203704833,
+                                               "created-date":  {
+                                                                    "value":  1769504371557
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1769504371557
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Data-constrained Magnetohydrodynamic Simulation of the Global Solar Corona Including Solar Wind Effects within 2.5 R ⊙"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ae27d1",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ae27d1",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ae27d1"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.3847/1538-4357/ae27d1"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2026"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "02"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "01"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/203704833",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1765359245589
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ae2315",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ae2315",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ae2315"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  199248218,
+                                               "created-date":  {
+                                                                    "value":  1765359245589
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1765359245589
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Erratum: “Observational Study of Recurrent Jets: Evolution of Magnetic Flux, Current, and Helicity” (2025, ApJ, 979, 62)"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ae2315",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ae2315",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ae2315"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.3847/1538-4357/ae2315"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2025"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "12"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "10"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/199248218",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1737103446773
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ad9b7d",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ad9b7d",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ad9b7d"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  175960671,
+                                               "created-date":  {
+                                                                    "value":  1737103446773
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1737103446773
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Observational Study of Recurrent Jets: Evolution of Magnetic Flux, Current, and Helicity"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ad9b7d",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ad9b7d",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ad9b7d"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.3847/1538-4357/ad9b7d"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2025"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "01"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "20"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/175960671",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1728927708859
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.1088/1674-4527/acfa59",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.1088/1674-4527/acfa59",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.1088/1674-4527/acfa59"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  169536656,
+                                               "created-date":  {
+                                                                    "value":  1728927708859
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1728927708859
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "GRB 220408B: A Three-episode Burst from a Precessing Jet"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1088/1674-4527/acfa59",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1088/1674-4527/acfa59",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1088/1674-4527/acfa59"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "1674-4527",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "1674-4527",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/1674-4527"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "http://dx.doi.org/10.1088/1674-4527/acfa59"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2023"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "11"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "01"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Research in Astronomy and Astrophysics"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/169536656",
+                                               "display-index":  "0"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1733809556427
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.1051/0004-6361/202346393",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.1051/0004-6361/202346393",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.1051/0004-6361/202346393"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  173446566,
+                                               "created-date":  {
+                                                                    "value":  1733809556427
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1733809556427
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  null,
+                                                              "source-client-id":  {
+                                                                                       "uri":  "https://orcid.org/client/0000-0001-9884-1913",
+                                                                                       "path":  "0000-0001-9884-1913",
+                                                                                       "host":  "orcid.org"
+                                                                                   },
+                                                              "source-name":  {
+                                                                                  "value":  "Crossref"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Measuring local physical parameters in coronal loops with spatial seismology"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1051/0004-6361/202346393",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1051/0004-6361/202346393",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1051/0004-6361/202346393"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "https://doi.org/10.1051/0004-6361/202346393"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2023"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "10"
+                                                                                  },
+                                                                        "day":  null
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Astronomy \u0026 Astrophysics"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/173446566",
+                                               "display-index":  "1"
+                                           },
+                                           {
+                                               "put-code":  169513385,
+                                               "created-date":  {
+                                                                    "value":  1728910169935
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1728910169935
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Measuring local physical parameters in coronal loops with spatial seismology"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1051/0004-6361/202346393",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1051/0004-6361/202346393",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1051/0004-6361/202346393"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "0004-6361",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "0004-6361",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/0004-6361"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "1432-0746",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "1432-0746",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/1432-0746"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "http://dx.doi.org/10.1051/0004-6361/202346393"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2023"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "10"
+                                                                                  },
+                                                                        "day":  null
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Astronomy \u0026amp; Astrophysics"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/169513385",
+                                               "display-index":  "0"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1679404989853
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.1093/mnras/stac3139",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.1093/mnras/stac3139",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.1093/mnras/stac3139"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  131271055,
+                                               "created-date":  {
+                                                                    "value":  1679404989853
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1679404989853
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Multiple gas phases in supernova remnant IC 443: mapping shocked H2 with VLT/KMOS"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1093/mnras/stac3139",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1093/mnras/stac3139",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1093/mnras/stac3139"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "0035-8711",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "0035-8711",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/0035-8711"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "1365-2966",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "1365-2966",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/1365-2966"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "http://dx.doi.org/10.1093/mnras/stac3139"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2022"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "11"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "25"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Monthly Notices of the Royal Astronomical Society"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/131271055",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1678692383390
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.1051/0004-6361/202142711",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.1051/0004-6361/202142711",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.1051/0004-6361/202142711"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  130694857,
+                                               "created-date":  {
+                                                                    "value":  1678692383390
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1678692383390
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "Coronal loop kink oscillation periods derived from the information of density, magnetic field, and loop geometry"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.1051/0004-6361/202142711",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.1051/0004-6361/202142711",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.1051/0004-6361/202142711"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "0004-6361",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "0004-6361",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/0004-6361"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "1432-0746",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "1432-0746",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/1432-0746"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "http://dx.doi.org/10.1051/0004-6361/202142711"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2022"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "08"
+                                                                                  },
+                                                                        "day":  null
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "Astronomy \u0026amp; Astrophysics"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/130694857",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  },
+                  {
+                      "last-modified-date":  {
+                                                 "value":  1679404578603
+                                             },
+                      "external-ids":  {
+                                           "external-id":  [
+                                                               {
+                                                                   "external-id-type":  "doi",
+                                                                   "external-id-value":  "10.3847/1538-4357/ac29bd",
+                                                                   "external-id-normalized":  {
+                                                                                                  "value":  "10.3847/1538-4357/ac29bd",
+                                                                                                  "transient":  true
+                                                                                              },
+                                                                   "external-id-normalized-error":  null,
+                                                                   "external-id-url":  {
+                                                                                           "value":  "https://doi.org/10.3847/1538-4357/ac29bd"
+                                                                                       },
+                                                                   "external-id-relationship":  "self"
+                                                               }
+                                                           ]
+                                       },
+                      "work-summary":  [
+                                           {
+                                               "put-code":  131270320,
+                                               "created-date":  {
+                                                                    "value":  1679404578603
+                                                                },
+                                               "last-modified-date":  {
+                                                                          "value":  1679404578603
+                                                                      },
+                                               "source":  {
+                                                              "source-orcid":  {
+                                                                                   "uri":  "https://orcid.org/0000-0001-9610-0433",
+                                                                                   "path":  "0000-0001-9610-0433",
+                                                                                   "host":  "orcid.org"
+                                                                               },
+                                                              "source-client-id":  null,
+                                                              "source-name":  {
+                                                                                  "value":  "Guoyin Chen"
+                                                                              },
+                                                              "assertion-origin-orcid":  null,
+                                                              "assertion-origin-client-id":  null,
+                                                              "assertion-origin-name":  null
+                                                          },
+                                               "title":  {
+                                                             "title":  {
+                                                                           "value":  "GRB 210121A: A Typical Fireball Burst Detected by Two Small Missions"
+                                                                       },
+                                                             "subtitle":  null,
+                                                             "translated-title":  null
+                                                         },
+                                               "external-ids":  {
+                                                                    "external-id":  [
+                                                                                        {
+                                                                                            "external-id-type":  "doi",
+                                                                                            "external-id-value":  "10.3847/1538-4357/ac29bd",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "10.3847/1538-4357/ac29bd",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://doi.org/10.3847/1538-4357/ac29bd"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "self"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "0004-637X",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "0004-637X",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/0004-637X"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        },
+                                                                                        {
+                                                                                            "external-id-type":  "issn",
+                                                                                            "external-id-value":  "1538-4357",
+                                                                                            "external-id-normalized":  {
+                                                                                                                           "value":  "1538-4357",
+                                                                                                                           "transient":  true
+                                                                                                                       },
+                                                                                            "external-id-normalized-error":  null,
+                                                                                            "external-id-url":  {
+                                                                                                                    "value":  "https://portal.issn.org/resource/ISSN/1538-4357"
+                                                                                                                },
+                                                                                            "external-id-relationship":  "part-of"
+                                                                                        }
+                                                                                    ]
+                                                                },
+                                               "url":  {
+                                                           "value":  "http://dx.doi.org/10.3847/1538-4357/ac29bd"
+                                                       },
+                                               "type":  "journal-article",
+                                               "publication-date":  {
+                                                                        "year":  {
+                                                                                     "value":  "2021"
+                                                                                 },
+                                                                        "month":  {
+                                                                                      "value":  "12"
+                                                                                  },
+                                                                        "day":  {
+                                                                                    "value":  "01"
+                                                                                }
+                                                                    },
+                                               "journal-title":  {
+                                                                     "value":  "The Astrophysical Journal"
+                                                                 },
+                                               "visibility":  "public",
+                                               "path":  "/0000-0001-9610-0433/work/131270320",
+                                               "display-index":  "1"
+                                           }
+                                       ]
+                  }
+              ],
+    "path":  "/0000-0001-9610-0433/works"
+}

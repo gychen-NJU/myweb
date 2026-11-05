@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guoyin Chen — 太阳物理，奥斯陆大学</title>
+  <meta name="description" content="奥斯陆大学 Rosseland 太阳物理中心客座研究员。研究方向：偏振反演、磁场外推，以及数据约束的太阳大气 MHD 模型。">
+  <meta name="author" content="Guoyin Chen">
+  <meta name="theme-color" content="#f2f1ec">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Guoyin Chen — 太阳物理">
+  <meta property="og:description" content="太阳磁场写在偏振光里。我做的工具把它读出来。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="../assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Guoyin Chen，奥斯陆大学 Rosseland 太阳物理中心客座研究员。">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="en" href="../index.html">
+  <link rel="alternate" hreflang="zh-Hans" href="index.html">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/spectral-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/fragmentmono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Guoyin Chen",
+    "jobTitle": "Guest Researcher",
+    "email": "guoyin.chen@astro.uio.no",
+    "affiliation": [
+      { "@type": "Organization", "name": "Rosseland Centre for Solar Physics, University of Oslo" },
+      { "@type": "Organization", "name": "Nanjing University" }
+    ],
+    "knowsAbout": ["Solar physics", "Spectropolarimetry", "Magnetohydrodynamics", "Machine learning", "Coronal seismology", "Magnetic field extrapolation"],
+    "url": "https://github.com/gychen-NJU",
+    "sameAs": [
+      "https://orcid.org/0000-0001-9610-0433",
+      "https://github.com/gychen-NJU",
+      "https://www.researchgate.net/profile/Guoyin-Chen-2",
+      "https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="masthead" data-header>
+    <div class="wrap masthead__in">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark__mark" aria-hidden="true"></span>
+        <span class="wordmark__text">Guoyin Chen</span>
+        <span class="wordmark__sep" aria-hidden="true">/</span>
+        <span class="wordmark__sub">太阳物理</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#research">研究</a>
+        <a href="publications.html">论文</a>
+        <a href="#code">软件</a>
+        <a href="#about">关于</a>
+      </nav>
+      <div class="masthead__ext">
+        <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+        <a href="https://github.com/gychen-NJU">GitHub</a>
+        <a class="lang-link" href="../index.html" hreflang="en" lang="en">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= hero ================= -->
+    <section class="hero wrap">
+      <div class="grid12 hero__grid">
+        <div class="hero__copy">
+          <h1 class="reveal">Guoyin Chen</h1>
+          <p class="hero__lead reveal" style="--d:120ms">太阳磁场写在偏振光里。我做的工具把它读出来：反演程序、神经求解器、磁场外推。然后用这些工具检验我们对太阳大气的认识。</p>
+          <div class="hero__meta mono reveal" style="--d:180ms">
+            <span>客座研究员，Rosseland 太阳物理中心</span>
+            <span>奥斯陆大学理论天体物理研究所</span>
+            <span>南京大学天文与空间科学学院</span>
+            <a href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+          </div>
+          <div class="hero__actions reveal" style="--d:240ms">
+            <a class="btn" href="publications.html">论文 <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#code">软件</a>
+          </div>
+        </div>
+
+        <figure class="plate plate--hero hero__plate reveal" style="--d:90ms">
+          <div class="plate__media">
+            <img src="../assets/img/portrait.jpg"
+                 srcset="../assets/img/portrait-sm.jpg 480w, ../assets/img/portrait.jpg 1100w"
+                 sizes="(max-width: 900px) 84vw, 34vw"
+                 width="1100" height="1466"
+                 alt="Guoyin Chen 的肖像，石板蓝影棚背景"
+                 fetchpriority="high" decoding="async">
+          </div>
+          <div class="plate__no"><b>图版 I</b><span>肖像</span></div>
+          <figcaption>Guoyin Chen，奥斯陆。照片由奥斯陆大学提供。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv11-d" d="M0 38.3L10 38.5L20 39.1L30 38.5L40 37.7L50 38.0L60 39.4L61 39.7L62 40.1L63 40.6L64 41.1L65 41.8L66 42.5L67 43.4L68 44.3L69 45.3L70 46.4L71 47.5L72 48.6L73 49.5L74 50.3L75 50.8L76 50.9L77 50.5L78 49.4L79 47.6L80 45.0L81 41.6L82 37.4L83 33.2L84 29.6L85 26.9L86 25.0L87 23.9L88 23.4L89 23.5L90 24.1L91 25.0L92 26.0L93 27.2L94 28.5L95 29.7L96 30.8L97 31.9L98 32.8L99 33.7L100 34.4L101 35.0L102 35.5L103 35.9L104 36.3L110 37.2L120 37.9L130 38.9L140 38.8L150 38.3L160 38.6L170 38.9L180 38.0L190 37.4L200 37.7L210 37.7L220 37.0L230 37.1L240 38.0L250 38.1L260 37.8L270 38.4L280 39.1L290 38.8L298 39.3L299 39.6L300 39.9L301 40.4L302 40.9L303 41.5L304 42.2L305 43.0L306 43.9L307 44.9L308 45.9L309 46.8L310 47.7L311 48.5L312 49.0L313 49.2L314 49.0L315 48.2L316 46.8L317 44.7L318 41.8L319 38.5L320 35.1L321 32.3L322 30.2L323 28.7L324 27.8L325 27.5L326 27.6L327 28.0L328 28.6L329 29.4L330 30.2L331 31.0L332 31.9L333 32.6L334 33.3L335 34.0L336 34.5L337 35.0L338 35.4L339 35.8L340 36.1L350 37.6L360 37.6L370 37.0L380 37.4L390 38.3L400 38.2L410 38.0L420 38.7L430 39.1L440 38.4L450 38.0L460 38.4L470 38.1L480 37.6L484 38.3L485 38.6L486 39.0L487 39.5L488 40.1L489 40.8L490 41.6L491 42.6L492 43.6L493 44.7L494 45.8L495 47.0L496 48.1L497 49.2L498 50.1L499 50.6L500 50.8L501 50.5L502 49.6L503 48.0L504 45.6L505 42.4L506 38.5L507 34.4L508 30.9L509 28.2L510 26.2L511 24.9L512 24.3L513 24.3L514 24.6L515 25.3L516 26.2L517 27.2L518 28.3L519 29.4L520 30.4L521 31.4L522 32.4L523 33.2L524 34.0L525 34.7L526 35.3L527 35.8L528 36.3L530 37.0L540 38.6L550 38.4L560 38.2L570 38.9L580 39.0L590 38.1L600 37.8" pathLength="1"/>
+          <clipPath id="sv11-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv11-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv11-d" clip-path="url(#sv11-up)"/>
+        <use class="trace trace--red" href="#sv11-d" clip-path="url(#sv11-dn)"/>
+      </svg></div>
+
+    <!-- ================= research ================= -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>01</b>研究</span>
+          </div>
+          <div class="section__title">
+            <h2>读懂磁场</h2>
+            <p>五条线索，同一个问题在五个高度上追问：太阳大气里的磁场在做什么，我们又凭什么知道。</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="threads">
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">01</div>
+                <div class="thread__head">
+                  <h3>偏振反演</h3>
+                </div>
+                <div class="thread__body">
+                  <p>一条 Stokes 谱线是指纹，磁场、温度、速度缠在一起。我写反演程序把它们拆开：GPU 上批量求解的 Milne–Eddington、基于节点的非线性最小二乘，以及现在能一次给出整层大气的物理信息网络。</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">02</div>
+                <div class="thread__head">
+                  <h3>学习反问题</h3>
+                </div>
+                <div class="thread__body">
+                  <p>反演的代价高，因为它是迭代的。用辐射转移解训练出来的网络并不取代物理，它让物理变得便宜：不必逐像素迭代，也能给出整个视场。</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">03</div>
+                <div class="thread__head">
+                  <h3>磁场外推</h3>
+                </div>
+                <div class="thread__body">
+                  <p>光球给出边界条件，日冕给出后果。外推把测得的表面磁场抬进上方的三维空间：经典做法是无作用力场，现在也可以用物理约束的 GAN 来学。</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">04</div>
+                <div class="thread__head">
+                  <h3>数据约束的 MHD</h3>
+                </div>
+                <div class="thread__body">
+                  <p>模拟只有能被观测才算有用。我用实测磁场约束全球日冕的 MHD 模型，再合成仪器会看到的样子，让模型与观测在同一套单位里比较。</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae27d1">ApJ 997, 228</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.3847/1538-4357/ae6f0d">ApJ 1004, 166</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">05</div>
+                <div class="thread__head">
+                  <h3>日冕地震学</h3>
+                </div>
+                <div class="thread__body">
+                  <p>日冕环会振荡，周期里藏着密度、场强和几何。空间地震学把振荡反推回这些参数：一种用时间而不是用光做的测量。</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202142711">A&amp;A 664, A48</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202346393">A&amp;A 678, A205</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+
+        <figure class="plate plate--wide plate--figure">
+          <div class="plate__media">
+            <picture>
+              <source srcset="../assets/img/plate-stokes.webp" type="image/webp">
+              <img src="../assets/img/plate-stokes.jpg" width="1800" height="1132" loading="lazy" decoding="async"
+                   alt="四行四列的图版：行分别是 Hinode 分光偏振仪的观测与反演合成图，对应 6301.5 与 6302.5 埃两条谱线；列分别是 Stokes I、Q、U、V。">
+            </picture>
+          </div>
+          <div class="plate__no"><b>图版 II</b><span>Stokes 图</span></div>
+          <figcaption>行：Hinode/SP 观测，以及反演合成出的同一批图，对应 Fe I 6301.5 Å 与 6302.5 Å 两条谱线。列：Stokes I、Q、U、V。本站的蓝与红，就是这张图里磁场的两种符号。取自 Chen et al. 2026, <i>A&amp;A</i> <b>710</b>, A227。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv47-d" d="M0 38.1L10 38.9L20 38.6L30 39.2L31 39.5L32 39.8L33 40.3L34 40.9L35 41.6L36 42.4L37 43.3L38 44.4L39 45.5L40 46.8L41 48.1L42 49.4L43 50.7L44 51.7L45 52.4L46 52.7L47 52.4L48 51.2L49 49.2L50 46.2L51 42.2L52 37.4L53 33.0L54 29.5L55 26.9L56 25.2L57 24.5L58 24.3L59 24.8L60 25.6L61 26.6L62 27.8L63 29.0L64 30.2L65 31.3L66 32.3L67 33.2L68 34.0L69 34.7L70 35.3L71 35.8L72 36.2L80 37.8L90 37.6L100 36.9L110 37.3L120 38.0L130 37.9L140 37.8L150 38.6L160 39.1L170 38.5L180 38.2L190 38.7L200 38.5L210 38.5L211 38.7L212 39.0L213 39.3L214 39.8L215 40.3L216 41.0L217 41.8L218 42.7L219 43.7L220 44.8L221 45.9L222 47.2L223 48.4L224 49.6L225 50.7L226 51.6L227 52.2L228 52.4L229 52.0L230 51.0L231 49.3L232 46.7L233 43.3L234 39.2L235 34.8L236 30.9L237 27.7L238 25.3L239 23.8L240 22.9L241 22.6L242 22.9L243 23.5L244 24.3L245 25.3L246 26.5L247 27.6L248 28.8L249 29.9L250 30.9L251 31.9L252 32.7L253 33.5L254 34.2L255 34.8L256 35.3L257 35.8L260 36.9L270 38.3L280 38.1L290 38.1L300 38.9L310 39.0L320 38.3L330 38.1L340 38.5L350 37.9L360 37.1L370 37.3L380 37.8L390 37.3L400 37.2L410 38.1L418 39.8L419 40.3L420 41.1L421 42.0L422 43.3L423 44.8L424 46.5L425 48.3L426 50.1L427 51.6L428 52.2L429 51.5L430 49.0L431 44.3L432 37.7L433 31.3L434 26.9L435 24.7L436 24.3L437 25.1L438 26.7L439 28.6L440 30.6L441 32.4L442 34.0L443 35.3L444 36.3L445 37.1L450 38.9L460 38.8L470 38.0L480 38.0L490 38.2L500 37.5L510 36.9L520 37.4L530 37.8L540 38.1L542 38.8L543 39.3L544 40.1L545 41.1L546 42.3L547 43.8L548 45.4L549 47.1L550 48.6L551 49.8L552 50.2L553 49.5L554 47.2L555 43.1L556 37.5L557 32.2L558 28.5L559 26.6L560 26.1L561 26.7L562 27.9L563 29.5L564 31.2L565 32.7L566 34.1L567 35.3L568 36.2L569 36.9L570 37.4L580 38.2L590 38.5L600 39.0" pathLength="1"/>
+          <clipPath id="sv47-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv47-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv47-d" clip-path="url(#sv47-up)"/>
+        <use class="trace trace--red" href="#sv47-d" clip-path="url(#sv47-dn)"/>
+      </svg></div>
+
+    <!-- ================= selected papers ================= -->
+    <section class="section" id="papers">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>02</b>论文</span>
+          </div>
+          <div class="section__title">
+            <h2>论文选</h2>
+            <p>十篇里选五篇，选的是它们对方法的说明力。完整记录共 10 篇（2021–2026，其中 4 篇第一作者），附摘要与 BibTeX。</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="pubs pubs--compact">
+
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202659270">A synergistic spectropolarimetric inversion via gradient-bias annealing and physics-informed neural networks</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Díaz Baso, C. J.</span>, <span class="au">Hao, Q.</span>, <span class="au">Ding, M. D.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 710, A227</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202659270" title="doi:10.1051/0004-6361/202659270"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202659270</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.3847/1538-4357/ae5108">A Novel Way for Extrapolating the Solar Magnetic Field with PRO-GAN</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Hao, Q.</span>, <span class="au">Ding, M.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">ApJ 1001, 96</span>
+            <a class="doi" href="https://doi.org/10.3847/1538-4357/ae5108" title="doi:10.3847/1538-4357/ae5108"><span class="lbl">doi</span><span class="id">10.3847/1538-4357/ae5108</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.3847/1538-4357/ae27d1">Data-constrained Magnetohydrodynamic Simulation of the Global Solar Corona Including Solar Wind Effects within 2.5 R☉</a></h3>
+          <p class="pub__authors"><span class="au">Li, Y.</span>, <span class="au"><b>Chen, G.</b></span>, <span class="au">Guo, J.</span>, <span class="au">Guo, Y.</span>, <span class="au">Wu, H.</span>, <span class="au">Huang, Y.</span>, <span class="au">Cheng, X.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Keppens, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">ApJ 997, 228</span>
+            <a class="doi" href="https://doi.org/10.3847/1538-4357/ae27d1" title="doi:10.3847/1538-4357/ae27d1"><span class="lbl">doi</span><span class="id">10.3847/1538-4357/ae27d1</span></a>
+          <a class="arxiv" href="https://arxiv.org/abs/2511.19975" title="arXiv:2511.19975"><span class="lbl">arXiv</span><span class="id">2511.19975</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202346393">Measuring local physical parameters in coronal loops with spatial seismology</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Guo, Y.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Erdélyi, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 678, A205</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202346393" title="doi:10.1051/0004-6361/202346393"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202346393</span></a>
+          </div>
+        </article>
+        <article class="pub">
+          <h3 class="pub__title"><a href="https://doi.org/10.1051/0004-6361/202142711">Coronal loop kink oscillation periods derived from the information of density, magnetic field, and loop geometry</a></h3>
+          <p class="pub__authors"><span class="au"><b>Chen, G. Y.</b></span>, <span class="au">Chen, L. Y.</span>, <span class="au">Guo, Y.</span>, <span class="au">Ding, M. D.</span>, <span class="au">Chen, P. F.</span>, <span class="au">Erdélyi, R.</span></p>
+          <div class="pub__venue mono">
+            <span class="jrnl">A&amp;A 664, A48</span>
+            <a class="doi" href="https://doi.org/10.1051/0004-6361/202142711" title="doi:10.1051/0004-6361/202142711"><span class="lbl">doi</span><span class="id">10.1051/0004-6361/202142711</span></a>
+          </div>
+        </article>
+
+            </div>
+            <div class="pub-list-foot mono">
+              <a href="publications.html">全部 10 篇 <span aria-hidden="true">→</span></a>
+              <a href="https://orcid.org/0000-0001-9610-0433">ORCID 记录</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv92-d" d="M0 39.0L10 38.2L20 38.1L30 38.4L40 37.8L50 37.1L60 38.3L62 38.9L63 39.2L64 39.6L65 40.1L66 40.6L67 41.2L68 41.8L69 42.5L70 43.3L71 44.1L72 45.0L73 45.9L74 46.8L75 47.8L76 48.7L77 49.6L78 50.3L79 50.9L80 51.3L81 51.4L82 51.2L83 50.5L84 49.4L85 47.7L86 45.4L87 42.5L88 39.2L89 35.5L90 32.2L91 29.3L92 27.1L93 25.5L94 24.4L95 23.8L96 23.7L97 24.0L98 24.5L99 25.3L100 26.2L101 27.2L102 28.3L103 29.3L104 30.4L105 31.4L106 32.3L107 33.2L108 33.9L109 34.6L110 35.2L111 35.7L112 36.2L113 36.5L114 36.8L115 37.1L120 37.7L130 38.4L140 39.1L150 38.7L160 37.9L170 38.7L173 39.6L174 40.0L175 40.5L176 41.0L177 41.6L178 42.4L179 43.2L180 44.1L181 45.1L182 46.1L183 47.3L184 48.5L185 49.7L186 50.9L187 52.0L188 52.9L189 53.6L190 53.9L191 53.8L192 53.0L193 51.6L194 49.4L195 46.3L196 42.5L197 37.9L198 33.1L199 29.0L200 25.7L201 23.2L202 21.6L203 20.7L204 20.4L205 20.7L206 21.4L207 22.4L208 23.7L209 25.0L210 26.4L211 27.7L212 29.0L213 30.3L214 31.4L215 32.4L216 33.3L217 34.1L218 34.8L219 35.3L220 35.8L221 36.2L230 37.3L240 37.7L250 38.7L260 38.8L270 38.3L280 38.6L290 39.0L300 38.3L310 37.5L320 37.8L330 37.8L340 37.1L350 37.0L360 37.8L370 38.0L380 37.7L390 38.2L400 39.2L408 40.3L409 40.6L410 41.0L411 41.5L412 42.1L413 42.8L414 43.6L415 44.5L416 45.6L417 46.7L418 47.8L419 48.9L420 49.9L421 50.6L422 51.1L423 51.0L424 50.3L425 48.9L426 46.6L427 43.5L428 39.5L429 35.3L430 31.8L431 29.0L432 27.2L433 26.2L434 25.8L435 26.1L436 26.7L437 27.6L438 28.6L439 29.8L440 30.9L441 32.0L442 32.9L443 33.8L444 34.5L445 35.2L446 35.7L447 36.1L448 36.4L450 36.8L460 37.2L470 37.7L480 37.6L490 37.0L500 37.3L510 38.2L520 38.2L530 37.9L540 38.6L550 39.1L560 38.6L570 38.1L580 38.4L590 38.3L600 37.3" pathLength="1"/>
+          <clipPath id="sv92-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv92-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv92-d" clip-path="url(#sv92-up)"/>
+        <use class="trace trace--red" href="#sv92-d" clip-path="url(#sv92-dn)"/>
+      </svg></div>
+
+    <!-- ================= software ================= -->
+    <section class="section" id="code">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>03</b>软件</span>
+          </div>
+          <div class="section__title">
+            <h2>工具</h2>
+            <p>论文背后的代码，以及写论文时让文献保持可读的小工具。</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body section__body--full">
+            <div class="projects">
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  <span class="project__domain mono">反演 · Python</span>
+                </div>
+                <p>用于 Stokes IQUV 光谱合成与反演的 PyTorch 库，带一个预训练的神经算子求解器。</p>
+                <div class="project__foot mono"><span>v1.2.0</span><span>PyTorch</span><span>合成</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                  <span class="project__domain mono">反演 · CUDA</span>
+                </div>
+                <p>GPU 批量求解太阳 Stokes 谱线的 Milne–Eddington 反演，含梯度偏置退火与物理信息网络。</p>
+                <div class="project__foot mono"><span>Jupyter</span><span>批量求解</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  <span class="project__domain mono">外推 · Python</span>
+                </div>
+                <p>物理增强的 GAN，把光球边界外推成三维无作用力磁场。</p>
+                <div class="project__foot mono"><span>v2.0.0</span><span>MIT</span><span>GAN</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/arxiv-checkup">arxiv-checkup</a>
+                  <span class="project__domain mono">工具链 · agent 技能</span>
+                </div>
+                <p>agent 技能：盯住指定的 arXiv 分区，把相关的新论文归档进三级 Zotero 目录。</p>
+                <div class="project__foot mono"><span>v0.1.1</span><span>MIT</span><span>Zotero</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/zotnote">zotnote</a>
+                  <span class="project__domain mono">工具链 · agent 技能</span>
+                </div>
+                <p>agent 技能：把 Zotero 里的 PDF 变成带图的 Markdown 精读笔记，镜像进 Obsidian 库。</p>
+                <div class="project__foot mono"><span>v0.6.0</span><span>MIT</span><span>Obsidian</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/dsh-overleaf">dsh-overleaf</a>
+                  <span class="project__domain mono">工具链 · 编辑器</span>
+                </div>
+                <p>把 Overleaf 工作台嵌成 DeepSeek Harness Web 的第四个标签页，支持引用选区与光标插入。</p>
+                <div class="project__foot mono"><span>v1.0.1</span><span>MIT</span><span>JavaScript</span></div>
+              </article>
+
+            </div>
+
+            <p class="also mono">其余内容，包括 agent 技能与编辑器插件，都在 <a href="https://github.com/gychen-NJU?tab=repositories">GitHub</a> 上。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="rule-wrap"><svg class="profile-rule" viewBox="0 0 600 76" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+          <path id="sv133-d" d="M0 38.6L10 38.3L20 37.3L30 37.3L40 37.8L50 37.4L60 37.0L70 37.8L80 39.0L85 40.0L86 40.3L87 40.7L88 41.2L89 41.8L90 42.4L91 43.2L92 44.0L93 45.0L94 46.1L95 47.2L96 48.4L97 49.6L98 50.8L99 51.9L100 52.9L101 53.7L102 54.1L103 54.1L104 53.5L105 52.4L106 50.5L107 47.8L108 44.4L109 40.3L110 36.0L111 32.1L112 28.9L113 26.5L114 24.8L115 23.8L116 23.3L117 23.4L118 23.9L119 24.6L120 25.5L121 26.6L122 27.7L123 28.8L124 29.9L125 31.0L126 31.9L127 32.8L128 33.6L129 34.2L130 34.8L131 35.3L132 35.8L133 36.2L140 37.7L150 38.4L160 37.8L170 37.0L180 37.3L190 37.8L200 37.3L210 37.3L220 38.2L230 38.7L240 38.2L250 38.4L260 39.1L270 38.7L280 37.9L290 37.9L300 38.1L310 37.4L320 37.1L326 38.5L327 38.9L328 39.4L329 40.0L330 40.7L331 41.5L332 42.4L333 43.3L334 44.4L335 45.6L336 46.8L337 48.0L338 49.1L339 50.1L340 50.9L341 51.3L342 51.2L343 50.6L344 49.2L345 47.0L346 43.9L347 40.0L348 35.7L349 31.7L350 28.5L351 26.2L352 24.8L353 24.0L354 23.9L355 24.3L356 25.1L357 26.1L358 27.3L359 28.5L360 29.7L361 31.0L362 32.1L363 33.1L364 34.1L365 34.9L366 35.6L367 36.3L368 36.8L370 37.6L380 38.7L390 38.3L400 38.5L410 39.0L420 38.3L430 37.5L440 37.8L450 37.9L460 37.1L470 37.0L480 37.8L490 38.1L498 38.7L499 39.0L500 39.3L501 39.8L502 40.3L503 40.9L504 41.6L505 42.4L506 43.3L507 44.3L508 45.2L509 46.2L510 47.1L511 47.9L512 48.4L513 48.6L514 48.3L515 47.4L516 45.9L517 43.7L518 40.9L519 37.6L520 34.6L521 32.2L522 30.5L523 29.4L524 29.0L525 28.9L526 29.3L527 29.8L528 30.6L529 31.4L530 32.2L531 33.1L532 33.8L533 34.5L534 35.2L535 35.7L536 36.2L537 36.6L538 36.9L539 37.1L540 37.4L550 38.5L560 38.7L570 37.8L580 37.3L590 37.7L600 37.7" pathLength="1"/>
+          <clipPath id="sv133-up"><rect x="0" y="0" width="600" height="38"/></clipPath>
+          <clipPath id="sv133-dn"><rect x="0" y="38" width="600" height="38"/></clipPath>
+        </defs>
+        <g class="ticks"><line x1="20" y1="41" x2="20" y2="44"/><line x1="60" y1="41" x2="60" y2="44"/><line x1="100" y1="41" x2="100" y2="44"/><line x1="140" y1="41" x2="140" y2="44"/><line x1="180" y1="41" x2="180" y2="44"/><line x1="220" y1="41" x2="220" y2="44"/><line x1="260" y1="41" x2="260" y2="44"/><line x1="300" y1="41" x2="300" y2="44"/><line x1="340" y1="41" x2="340" y2="44"/><line x1="380" y1="41" x2="380" y2="44"/><line x1="420" y1="41" x2="420" y2="44"/><line x1="460" y1="41" x2="460" y2="44"/><line x1="500" y1="41" x2="500" y2="44"/><line x1="540" y1="41" x2="540" y2="44"/><line x1="580" y1="41" x2="580" y2="44"/></g>
+        <line class="axis" x1="0" y1="38" x2="600" y2="38"/>
+        <use class="trace trace--blue" href="#sv133-d" clip-path="url(#sv133-up)"/>
+        <use class="trace trace--red" href="#sv133-d" clip-path="url(#sv133-dn)"/>
+      </svg></div>
+
+    <!-- ================= about ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>04</b>关于</span>
+          </div>
+          <div class="section__title">
+            <h2>在观测与模型之间</h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>我研究太阳物理，工作在观测与模型之间。仪器测量的是偏振；大气回以磁场、温度和视向速度。我要做的一切，就是从前者走到后者，路上不丢掉物理。</p>
+            <p>我在南京大学学习天文，日冕地震学的工作从那里开始。在 Rosseland 太阳物理中心，我做反演、外推和辐射合成，服务于数据约束的日冕 MHD 模型。</p>
+            <p>代码是公开的：反演有 SPOT 与 CuSP，外推有 PF2nlfff。一个诊断方法的可复现性不会超过产生它的代码，而最快被纠正的办法，就是把工具公开。</p>
+          </div>
+
+          <aside class="about__side">
+            <dl class="deflist mono">
+              <div>
+                <dt>职位</dt>
+                <dd>客座研究员（Guest Researcher）</dd>
+              </div>
+              <div>
+                <dt>中心</dt>
+                <dd>Rosseland 太阳物理中心，奥斯陆大学</dd>
+              </div>
+              <div>
+                <dt>研究所</dt>
+                <dd>理论天体物理研究所，奥斯陆大学</dd>
+              </div>
+              <div>
+                <dt>同时隶属</dt>
+                <dd>天文与空间科学学院，南京大学</dd>
+              </div>
+              <div>
+                <dt>方向</dt>
+                <dd>偏振测量 · MHD · 机器学习</dd>
+              </div>
+              <div>
+                <dt>ORCID</dt>
+                <dd><a href="https://orcid.org/0000-0001-9610-0433">0000-0001-9610-0433</a></dd>
+              </div>
+              <div>
+                <dt>所在地</dt>
+                <dd>奥斯陆，挪威</dd>
+              </div>
+            </dl>
+            <p class="side-note">
+              <span class="mono">愿意合作</span>
+              反演、外推、学习型求解器，以及任何观测谱线与计算谱线对不上的数据。
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= contact ================= -->
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="contact__head">
+          <h2>联系</h2>
+          <p>合作、数据，或者与文档不符、跑不起来的代码。</p>
+        </div>
+        <div class="contact__mail">
+          <a class="mail" href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+        </div>
+        <div class="contact__links mono">
+          <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+          <a href="https://github.com/gychen-NJU">GitHub</a>
+          <a href="https://www.researchgate.net/profile/Guoyin-Chen-2">ResearchGate</a>
+          <a href="https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html">奥斯陆大学</a>
+          <a href="https://arxiv.org/search/?query=Guoyin+Chen&searchtype=author">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="colophon mono">
+        <p>正文用 Spectral 与 Fragment Mono 排印。论文记录由 ORCID 生成，并与 Crossref 核对；作者顺序与 DOI 均按发表版本。手写 HTML 与 CSS，不用框架。</p>
+        <p class="colophon__right">蓝与红是 Stokes 磁图的极性色。<br>最后构建于 2026-11-05。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

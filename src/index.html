@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guoyin Chen — Solar Physics, University of Oslo</title>
+  <meta name="description" content="Solar physicist at the Rosseland Centre for Solar Physics, University of Oslo. Spectropolarimetric inversion, magnetic-field extrapolation, and data-constrained MHD models of the solar atmosphere.">
+  <meta name="author" content="Guoyin Chen">
+  <meta name="theme-color" content="#f2f1ec">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Guoyin Chen — Solar Physics">
+  <meta property="og:description" content="The Sun's magnetic field is written in polarised light. I build the diagnostics that read it.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Guoyin Chen, guest researcher at the Rosseland Centre for Solar Physics, University of Oslo.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/spectral-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fragmentmono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Guoyin Chen",
+    "jobTitle": "Guest Researcher",
+    "email": "guoyin.chen@astro.uio.no",
+    "affiliation": [
+      { "@type": "Organization", "name": "Rosseland Centre for Solar Physics, University of Oslo" },
+      { "@type": "Organization", "name": "Nanjing University" }
+    ],
+    "knowsAbout": ["Solar physics", "Spectropolarimetry", "Magnetohydrodynamics", "Machine learning", "Coronal seismology", "Magnetic field extrapolation"],
+    "url": "https://github.com/gychen-NJU",
+    "sameAs": [
+      "https://orcid.org/0000-0001-9610-0433",
+      "https://github.com/gychen-NJU",
+      "https://www.researchgate.net/profile/Guoyin-Chen-2",
+      "https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead" data-header>
+    <div class="wrap masthead__in">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark__mark" aria-hidden="true"></span>
+        <span class="wordmark__text">Guoyin Chen</span>
+        <span class="wordmark__sep" aria-hidden="true">/</span>
+        <span class="wordmark__sub">Solar physics</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="#code">Software</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="masthead__ext">
+        <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+        <a href="https://github.com/gychen-NJU">GitHub</a>
+        <a class="lang-link" href="zh/index.html" hreflang="zh-Hans" lang="zh-CN">中文</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= hero ================= -->
+    <section class="hero wrap">
+      <div class="grid12 hero__grid">
+        <div class="hero__copy">
+          <h1 class="reveal">Guoyin Chen</h1>
+          <p class="hero__lead reveal" style="--d:120ms">The Sun's magnetic field is written in polarised light. I build the diagnostics that read it: inversion codes, neural solvers, field extrapolations. Then I test what we think the solar atmosphere is doing.</p>
+          <div class="hero__meta mono reveal" style="--d:180ms">
+            <span>Guest researcher, Rosseland Centre for Solar Physics</span>
+            <span>Institute of Theoretical Astrophysics, University of Oslo</span>
+            <span>School of Astronomy and Space Science, Nanjing University</span>
+            <a href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+          </div>
+          <div class="hero__actions reveal" style="--d:240ms">
+            <a class="btn" href="publications.html">Publications <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#code">Software</a>
+          </div>
+        </div>
+
+        <figure class="plate plate--hero hero__plate reveal" style="--d:90ms">
+          <div class="plate__media">
+            <img src="assets/img/portrait.jpg"
+                 srcset="assets/img/portrait-sm.jpg 480w, assets/img/portrait.jpg 1100w"
+                 sizes="(max-width: 900px) 84vw, 34vw"
+                 width="1100" height="1466"
+                 alt="Guoyin Chen, photographed against a slate-blue studio background"
+                 fetchpriority="high" decoding="async">
+          </div>
+          <div class="plate__no"><b>Plate I</b><span>Portrait</span></div>
+          <figcaption>Guoyin Chen, Oslo. Photograph courtesy of the University of Oslo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    {{PROFILE_1}}
+
+    <!-- ================= research ================= -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>01</b>Research</span>
+          </div>
+          <div class="section__title">
+            <h2>Reading the magnetic field</h2>
+            <p>Five threads, one question asked at five heights: what is the field doing in the solar atmosphere, and how would we know?</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="threads">
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">01</div>
+                <div class="thread__head">
+                  <h3>Spectropolarimetric inversion</h3>
+                </div>
+                <div class="thread__body">
+                  <p>A Stokes profile is a fingerprint with the field, the temperature and the velocity tangled together. I write inversion codes that untangle them: Milne–Eddington solved in batch on a GPU, node-based nonlinear least squares, and now physics-informed networks that return a whole atmosphere in a single pass.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">02</div>
+                <div class="thread__head">
+                  <h3>Learning the inverse problem</h3>
+                </div>
+                <div class="thread__body">
+                  <p>The inverse problem is expensive because it is iterative. A network trained on radiative-transfer solutions does not replace the physics; it makes the physics affordable, returning a full field of view without iterating per pixel.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202659270">A&amp;A 710, A227</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">03</div>
+                <div class="thread__head">
+                  <h3>Magnetic-field extrapolation</h3>
+                </div>
+                <div class="thread__body">
+                  <p>The photosphere supplies a boundary condition and the corona supplies the consequences. Extrapolation lifts a measured surface field into the volume above it, force-free in the classical formulation and now learned with a physics-reinforced GAN.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae5108">ApJ 1001, 96</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">04</div>
+                <div class="thread__head">
+                  <h3>Data-constrained MHD</h3>
+                </div>
+                <div class="thread__body">
+                  <p>A simulation is only useful if it can be observed. I run MHD models of the global corona constrained by measured fields, and synthesise what an instrument would see, so that model and observation can be compared in the same units.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.3847/1538-4357/ae27d1">ApJ 997, 228</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.3847/1538-4357/ae6f0d">ApJ 1004, 166</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="thread fade-up">
+                <div class="thread__no mono">05</div>
+                <div class="thread__head">
+                  <h3>Coronal seismology</h3>
+                </div>
+                <div class="thread__body">
+                  <p>Loops oscillate, and the period carries density, field strength and geometry inside it. Spatial seismology turns that oscillation back into the parameters responsible for it: a measurement made of time instead of light.</p>
+                  <div class="thread__links mono">
+                    <a href="https://doi.org/10.1051/0004-6361/202142711">A&amp;A 664, A48</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://doi.org/10.1051/0004-6361/202346393">A&amp;A 678, A205</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+
+        <figure class="plate plate--wide plate--figure">
+          <div class="plate__media">
+            <picture>
+              <source srcset="assets/img/plate-stokes.webp" type="image/webp">
+              <img src="assets/img/plate-stokes.jpg" width="1800" height="1132" loading="lazy" decoding="async"
+                   alt="A four by four grid of maps: rows show observations from the Hinode SpectroPolarimeter and the corresponding synthetic maps from the inversion, for the 6301.5 and 6302.5 angstrom lines; columns show Stokes I, Q, U and V.">
+            </picture>
+          </div>
+          <div class="plate__no"><b>Plate II</b><span>Stokes maps</span></div>
+          <figcaption>Rows: Hinode/SP observations, then the same maps synthesised by the inversion — for the Fe I lines at 6301.5 Å and 6302.5 Å. Columns: Stokes I, Q, U, V. The blue and red of the site are the signs of this figure. From Chen et al. 2026, <i>A&amp;A</i> <b>710</b>, A227.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    {{PROFILE_2}}
+
+    <!-- ================= selected papers ================= -->
+    <section class="section" id="papers">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>02</b>Publications</span>
+          </div>
+          <div class="section__title">
+            <h2>Selected papers</h2>
+            <p>Five of {{PUB_COUNT}}, chosen for what they show about the method. The full record, {{SPAN}} and {{FIRST_COUNT}} as first author, carries abstracts and BibTeX.</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body">
+            <div class="pubs pubs--compact">
+
+{{PUBS_COMPACT}}
+
+            </div>
+            <div class="pub-list-foot mono">
+              <a href="publications.html">All {{PUB_COUNT}} publications <span aria-hidden="true">→</span></a>
+              <a href="https://orcid.org/0000-0001-9610-0433">ORCID record</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{PROFILE_3}}
+
+    <!-- ================= software ================= -->
+    <section class="section" id="code">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>03</b>Software</span>
+          </div>
+          <div class="section__title">
+            <h2>Instruments</h2>
+            <p>The codes behind the papers, and the small tools that keep the literature readable while the papers get written.</p>
+          </div>
+        </div>
+
+        <div class="grid12">
+          <div class="section__body section__body--full">
+            <div class="projects">
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/SPOT">SPOT</a>
+                  <span class="project__domain mono">Inversion · Python</span>
+                </div>
+                <p>PyTorch library for Stokes IQUV spectral synthesis and inversion, with a pretrained neural-operator solver.</p>
+                <div class="project__foot mono"><span>v1.2.0</span><span>PyTorch</span><span>Synthesis</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/CuSP">CuSP</a>
+                  <span class="project__domain mono">Inversion · CUDA</span>
+                </div>
+                <p>GPU-batched Milne–Eddington inversion of solar Stokes profiles with gradient-bias annealing and a physics-informed network.</p>
+                <div class="project__foot mono"><span>Jupyter</span><span>Batched solve</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/PF2nlfff">PF2nlfff</a>
+                  <span class="project__domain mono">Extrapolation · Python</span>
+                </div>
+                <p>Physics-reinforced GAN that extrapolates a photospheric boundary into a 3D nonlinear force-free magnetic field.</p>
+                <div class="project__foot mono"><span>v2.0.0</span><span>MIT</span><span>GAN</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/arxiv-checkup">arxiv-checkup</a>
+                  <span class="project__domain mono">Tooling · agent skill</span>
+                </div>
+                <p>Agent skill that watches chosen arXiv categories and files relevant new papers into a three-level Zotero tree.</p>
+                <div class="project__foot mono"><span>v0.1.1</span><span>MIT</span><span>Zotero</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/zotnote">zotnote</a>
+                  <span class="project__domain mono">Tooling · agent skill</span>
+                </div>
+                <p>Agent skill that turns Zotero PDFs into illustrated Markdown reading notes mirrored into an Obsidian vault.</p>
+                <div class="project__foot mono"><span>v0.6.0</span><span>MIT</span><span>Obsidian</span></div>
+              </article>
+
+              <article class="project fade-up">
+                <div class="project__top">
+                  <a class="project__name" href="https://github.com/gychen-NJU/dsh-overleaf">dsh-overleaf</a>
+                  <span class="project__domain mono">Tooling · editor</span>
+                </div>
+                <p>Overleaf workbench embedded as a fourth session tab in DeepSeek Harness Web, with selection quoting and caret insertion.</p>
+                <div class="project__foot mono"><span>v1.0.1</span><span>MIT</span><span>JavaScript</span></div>
+              </article>
+
+            </div>
+
+            <p class="also mono">Everything else, agent skills and editor plugins, lives on <a href="https://github.com/gychen-NJU?tab=repositories">GitHub</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{PROFILE_4}}
+
+    <!-- ================= about ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section__head">
+          <div class="section__aside">
+            <span class="sect-label mono"><b>04</b>About</span>
+          </div>
+          <div class="section__title">
+            <h2>Between the observation and the model</h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text">
+            <p>I am a solar physicist working between the observation and the model. The instrument measures polarisation; the atmosphere answers with a magnetic field, a temperature and a line-of-sight velocity. Everything I do is an attempt to get from the first to the second without losing the physics on the way.</p>
+            <p>My training is in astronomy at Nanjing University, where the coronal-seismology work began. At the Rosseland Centre for Solar Physics I work on inversion, extrapolation and radiation synthesis for data-constrained MHD models of the corona.</p>
+            <p>The codes are public, SPOT and CuSP for inversion and PF2nlfff for extrapolation, because a diagnostic is only as reproducible as the code that produces it and because the fastest way to be corrected is to publish the tool.</p>
+          </div>
+
+          <aside class="about__side">
+            <dl class="deflist mono">
+              <div>
+                <dt>Position</dt>
+                <dd>Guest Researcher</dd>
+              </div>
+              <div>
+                <dt>Centre</dt>
+                <dd>Rosseland Centre for Solar Physics</dd>
+              </div>
+              <div>
+                <dt>Institute</dt>
+                <dd>Institute of Theoretical Astrophysics, University of Oslo</dd>
+              </div>
+              <div>
+                <dt>Also at</dt>
+                <dd>School of Astronomy and Space Science, Nanjing University</dd>
+              </div>
+              <div>
+                <dt>Field</dt>
+                <dd>Spectropolarimetry · MHD · machine learning</dd>
+              </div>
+              <div>
+                <dt>ORCID</dt>
+                <dd><a href="https://orcid.org/0000-0001-9610-0433">0000-0001-9610-0433</a></dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Oslo, Norway</dd>
+              </div>
+            </dl>
+            <p class="side-note">
+              <span class="mono">Open to</span>
+              Collaboration on inversion, extrapolation, learned solvers, and any dataset where the observed profile and the computed one disagree.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= contact ================= -->
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="contact__head">
+          <h2>Correspondence</h2>
+          <p>For collaborations, data, or code that does not run as documented.</p>
+        </div>
+        <div class="contact__mail">
+          <a class="mail" href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+        </div>
+        <div class="contact__links mono">
+          <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+          <a href="https://github.com/gychen-NJU">GitHub</a>
+          <a href="https://www.researchgate.net/profile/Guoyin-Chen-2">ResearchGate</a>
+          <a href="https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html">University of Oslo</a>
+          <a href="https://arxiv.org/search/?query=Guoyin+Chen&searchtype=author">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="colophon mono">
+        <p>Set in Spectral and Fragment Mono. The publication record is generated from ORCID and cross-checked against Crossref; author order and DOIs are as published. Hand-written HTML and CSS, no framework.</p>
+        <p class="colophon__right">Blue and red are the polarity colours of a Stokes magnetogram.<br>Last built {{BUILT}}.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

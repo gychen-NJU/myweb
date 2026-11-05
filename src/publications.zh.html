@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>论文 — Guoyin Chen</title>
+  <meta name="description" content="Guoyin Chen 的同行评审论文，附摘要、DOI 与 BibTeX。记录由 ORCID 生成并与 Crossref 核对。">
+  <meta name="author" content="Guoyin Chen">
+  <meta name="theme-color" content="#f2f1ec">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="论文 — Guoyin Chen">
+  <meta property="og:description" content="完整发表记录，由 ORCID 生成并与 Crossref 核对。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="en" href="../publications.html">
+  <link rel="alternate" hreflang="zh-Hans" href="publications.html">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/spectral-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fragmentmono-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+
+  <header class="masthead" data-header>
+    <div class="wrap masthead__in">
+      <a class="wordmark" href="index.html">
+        <span class="wordmark__mark" aria-hidden="true"></span>
+        <span class="wordmark__text">Guoyin Chen</span>
+        <span class="wordmark__sep" aria-hidden="true">/</span>
+        <span class="wordmark__sub">太阳物理</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html#research">研究</a>
+        <a href="publications.html" aria-current="page">论文</a>
+        <a href="index.html#code">软件</a>
+        <a href="index.html#about">关于</a>
+      </nav>
+      <div class="masthead__ext">
+        <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+        <a href="https://github.com/gychen-NJU">GitHub</a>
+        <a class="lang-link" href="../publications.html" hreflang="en" lang="en">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="kicker mono">记录 · {{SPAN}}</p>
+        <h1>论文</h1>
+        <p>同行评审论文 {{PUB_COUNT}} 篇，其中 {{FIRST_COUNT}} 篇为第一作者。列表由我的 ORCID 记录生成，并与 Crossref 核对；作者顺序、卷号与页码均按发表版本。每条都附摘要与 BibTeX。</p>
+      </header>
+
+      <div class="record">
+        <aside class="record__side">
+          <div>
+            <details class="filters-block" data-filters-block open>
+              <summary class="mono record__label">筛选<span class="filters-block__count" data-filter-summary aria-hidden="true"></span></summary>
+              <div class="filters" data-filters>
+                <div class="filter-row" data-filter="year" role="group" aria-label="按年份筛选">
+            {{YEARS_ZH}}
+                </div>
+                <div class="filter-row" data-filter="tag" role="group" aria-label="按主题筛选">
+            {{TAGS_ZH}}
+                </div>
+              </div>
+            </details>
+          </div>
+          <div>
+            <label class="visually-hidden" for="pub-search">搜索论文</label>
+            <input class="search" id="pub-search" type="search" data-search placeholder="标题、作者、期刊" autocomplete="off">
+          </div>
+          <p class="record-count mono" data-count data-format="{shown} / {total} 篇" aria-live="polite">{{PUB_COUNT}} / {{PUB_COUNT}} 篇</p>
+          <p class="mono record__note">DOI 与 BibTeX 取自发表记录；有预印本时给出 arXiv 编号。</p>
+        </aside>
+
+        <div class="record__main">
+
+{{PUBS_FULL_ZH}}
+
+          <p class="mono record__empty" data-empty hidden>没有符合筛选条件的论文。</p>
+
+          <section class="preprints" data-preprints aria-labelledby="preprints-title">
+            <div class="year-head"><h2 id="preprints-title">预印本与已接收</h2></div>
+            <p class="mono preprints__note">这两篇还没有 DOI，因而尚未进入 ORCID。为完整起见列在这里，与上面的同行评审记录分开。</p>
+
+{{PREPRINTS_ZH}}
+          </section>
+
+          <div class="pub-list-foot mono">
+            <a href="publications.bib" download>下载 BibTeX <span aria-hidden="true">↓</span></a>
+            <a href="https://orcid.org/0000-0001-9610-0433">在 ORCID 查看完整列表 <span aria-hidden="true">→</span></a>
+            <a href="index.html">返回首页</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact__grid">
+        <div class="contact__head">
+          <h2>联系</h2>
+          <p>合作、数据，或者与文档不符、跑不起来的代码。</p>
+        </div>
+        <div class="contact__mail">
+          <a class="mail" href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+        </div>
+        <div class="contact__links mono">
+          <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>
+          <a href="https://github.com/gychen-NJU">GitHub</a>
+          <a href="https://www.researchgate.net/profile/Guoyin-Chen-2">ResearchGate</a>
+          <a href="https://www.mn.uio.no/astro/english/people/aca/guoyinc/index.html">奥斯陆大学</a>
+          <a href="https://arxiv.org/search/?query=Guoyin+Chen&searchtype=author">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="colophon mono">
+        <p>正文用 Spectral 与 Fragment Mono 排印。论文记录由 ORCID 生成，并与 Crossref 核对；作者顺序与 DOI 均按发表版本。手写 HTML 与 CSS，不用框架。</p>
+        <p class="colophon__right">蓝与红是 Stokes 磁图的极性色。<br>最后构建于 {{BUILT}}。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

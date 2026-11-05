@@ -2,6 +2,17 @@
 const root = document.documentElement;
 root.classList.add('js');
 
+/* scrollbar width ---------------------------------------------------------
+   The hero plate bleeds past the wrap to the window edge. 100vw includes the
+   scrollbar, so the exact overhang depends on it; publish the real value and
+   let the stylesheet do the arithmetic. */
+const setScrollbarWidth = () => {
+  const width = Math.max(0, window.innerWidth - root.clientWidth);
+  root.style.setProperty('--sbw', width + 'px');
+};
+setScrollbarWidth();
+window.addEventListener('resize', setScrollbarWidth, { passive: true });
+
 /* reveal on scroll ------------------------------------------------------- */
 const revealTargets = document.querySelectorAll('.fade-up, .profile-rule');
 if ('IntersectionObserver' in window && revealTargets.length) {

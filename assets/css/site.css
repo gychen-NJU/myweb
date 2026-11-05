@@ -66,15 +66,15 @@
 
 :root {
   /* paper & ink */
-  --paper: #f2f1ec;
-  --paper-2: #f8f7f3;
-  --paper-3: #eae9e2;
-  --ink: #14171a;
-  --ink-2: #494f53;
-  --ink-3: #63686d;
-  --rule: #d5d3c9;
-  --rule-2: #b8b6aa;
-  --link-rule: #8f8d82;
+  --paper: #f4eee3;
+  --paper-2: #faf6eb;
+  --paper-3: #eae1d0;
+  --ink: #171310;
+  --ink-2: #4b433b;
+  --ink-3: #655b50;
+  --rule: #ded3bf;
+  --rule-2: #bdb09a;
+  --link-rule: #8d8171;
 
   /* the two colours of a magnetogram, used only where the data speaks */
   --blue: #234a78;
@@ -1380,3 +1380,138 @@ html[lang="zh-CN"] h1 { letter-spacing: 0.05em; }
   .hero__name-zh,
   .hero__name-latin { margin-top: 0.35rem; }
 }
+
+/* ---------------------------------------------------------------------------
+   24. Warm ground, paper grain, and the corona plate
+   The page is printed on warm paper, not white: the ground carries a little
+   grain so large fields read as a surface rather than a screen, and the plate
+   between §02 and §03 drops to near-black so the corona can be seen at all.
+   --------------------------------------------------------------------------- */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+}
+
+/* The hero photograph: no frame, bled to the right edge of the window. */
+.hero__plate .plate__media {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.hero__plate .plate__media img { filter: saturate(0.92) contrast(1.03); }
+.hero__plate figcaption,
+.hero__plate .plate__no { max-width: 34rem; }
+
+@media (min-width: 1000px) {
+  .hero__plate {
+    margin-right: calc(-1 * (var(--gutter) + max(0px, (100vw - var(--sbw, 0px) - var(--wrap)) / 2)));
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__plate .plate__media { flex: 1 1 auto; }
+  .hero__plate .plate__media img {
+    height: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 26%;
+  }
+}
+
+/* The corona plate. */
+.corona {
+  position: relative;
+  margin-block: clamp(3.2rem, 6.5vw, 6rem);
+  background: #0a0b0d;
+  color: #f0e7da;
+  overflow: hidden;
+  border-block: 1px solid #0a0b0d;
+}
+.corona__art {
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/field-lines.svg");
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.corona::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(6, 7, 9, 0.9) 0%,
+    rgba(6, 7, 9, 0.72) 26%,
+    rgba(6, 7, 9, 0.28) 48%,
+    rgba(6, 7, 9, 0) 66%
+  );
+  pointer-events: none;
+}
+.corona__in {
+  position: relative;
+  z-index: 2;
+  min-height: clamp(300px, 38vw, 470px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  padding-block: clamp(2rem, 4.5vw, 3.4rem);
+}
+.corona__label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #e6b17b;
+}
+.corona__label b { font-weight: 400; color: #f0e7da; }
+.corona__cap {
+  max-width: 44ch;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(240, 231, 218, 0.8);
+}
+.corona__cap a { color: #f0e7da; text-decoration-color: rgba(240, 231, 218, 0.45); }
+
+@media (max-width: 720px) {
+  .corona { margin-block: clamp(2.4rem, 8vw, 3.4rem); }
+  .corona__in { min-height: 300px; }
+  .corona__cap { font-size: 0.82rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .corona__art img { transform: scale(1.04); }
+}
+
+/* ---------------------------------------------------------------------------
+   25. Corrections for the warm plate set
+   --------------------------------------------------------------------------- */
+
+.plate__media picture { display: block; }
+
+.contact__alt {
+  margin: 0.6rem 0 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+}
+.contact__alt a { color: var(--ink-2); }
+
+html[lang="zh-CN"] .corona__cap {
+  font-family: var(--sans);
+  line-height: 1.9;
+  letter-spacing: 0.01em;
+}
+html[lang="zh-CN"] .corona__label { letter-spacing: 0.06em; }
+html[lang="zh-CN"] .contact__alt { letter-spacing: 0.03em; }

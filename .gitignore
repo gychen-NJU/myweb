@@ -2,6 +2,9 @@
 data/_tmp/
 data/cache/
 data/_*.js
+data/_*.png
+data/_*.jpg
+data/_*.mjs
 data/github-profile.html
 data/publications.json
 .impeccable/

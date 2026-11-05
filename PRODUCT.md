@@ -44,7 +44,7 @@ A neighbouring academic homepage lists publications as a bibliography and descri
 
 - Name: **Guoyin Chen** (陈国银 — confirmed by the owner on 2026-11-05; Latin name first on the English page, Chinese name first on the Chinese page).
 - Affiliations, in the owner's own hierarchy: **direct-entry PhD student**, School of Astronomy and Space Science, Nanjing University (primary); guest researcher, Rosseland Centre for Solar Physics (RoCS), University of Oslo (secondary). The earlier reading of the UiO directory entry — which lists him as "Guest Researcher" and names Nanjing only as a B.Sc. — understates his actual position and must not be restored.
-- Contact: guoyin.chen@astro.uio.no; GitHub gychen-NJU; ORCID; ResearchGate.
+- Contact: gychen@smail.nju.edu.cn; GitHub gychen-NJU; ORCID; ResearchGate.
 - Portrait: official UiO photograph (`data/guoyin.jpg`). Must not be distorted, recoloured beyond crop, or replaced with generated imagery of a person.
 - Voice: first person, plain, specific, unfussy. No marketing adjectives about himself; no "passionate", "dedicated", "cutting-edge".
 

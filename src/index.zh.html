@@ -34,7 +34,7 @@
     "name": "陈国银",
     "alternateName": "Guoyin Chen",
     "jobTitle": "PhD Student",
-    "email": "guoyin.chen@astro.uio.no",
+    "email": "gychen@smail.nju.edu.cn",
     "affiliation": [
       { "@type": "Organization", "name": "School of Astronomy and Space Science, Nanjing University" },
       { "@type": "Organization", "name": "Rosseland Centre for Solar Physics, University of Oslo" }
@@ -87,7 +87,7 @@
           <div class="hero__meta mono reveal" style="--d:180ms">
             <span>南京大学天文与空间科学学院 直博生</span>
             <span>奥斯陆大学 Rosseland 太阳物理中心 客座研究员</span>
-            <a href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+            <a href="mailto:gychen@smail.nju.edu.cn">gychen@smail.nju.edu.cn</a>
           </div>
           <div class="hero__actions reveal" style="--d:240ms">
             <a class="btn" href="publications.html">论文 <span class="btn__arrow" aria-hidden="true">→</span></a>
@@ -97,15 +97,18 @@
 
         <figure class="plate plate--hero hero__plate reveal" style="--d:90ms">
           <div class="plate__media">
-            <img src="assets/img/portrait.jpg"
-                 srcset="assets/img/portrait-sm.jpg 480w, assets/img/portrait.jpg 1100w"
-                 sizes="(max-width: 900px) 84vw, 34vw"
-                 width="1100" height="1466"
-                 alt="Guoyin Chen 的肖像，石板蓝影棚背景"
-                 fetchpriority="high" decoding="async">
+            <picture>
+              <source media="(max-width: 520px)" srcset="assets/img/portrait-sq.jpg" width="800" height="800">
+              <img src="assets/img/portrait.jpg"
+                   srcset="assets/img/portrait-sm.jpg 480w, assets/img/portrait.jpg 1000w"
+                   sizes="(max-width: 900px) 84vw, 34vw"
+                   width="1000" height="1333"
+                   alt="Guoyin Chen 的侧脸，日落时分望向城市"
+                   fetchpriority="high" decoding="async">
+            </picture>
           </div>
           <div class="plate__no"><b>图版 I</b><span>肖像</span></div>
-          <figcaption>Guoyin Chen，奥斯陆。照片由奥斯陆大学提供。</figcaption>
+          <figcaption>Guoyin Chen，日落时分。</figcaption>
         </figure>
       </div>
     </section>
@@ -257,6 +260,15 @@
 
     {{PROFILE_3}}
 
+    <!-- ================= corona plate ================= -->
+    <section class="corona" aria-labelledby="corona-title">
+      <div class="corona__art" aria-hidden="true"></div>
+      <div class="wrap corona__in">
+        <p class="corona__label"><b>图版 III</b><span>日冕环</span></p>
+        <p class="corona__cap" id="corona-title">示意图，不是观测：一组立在日面边缘的环，按外推磁场应有的几何画出。PF2nlfff 要做的，正是从光球边界把它们还原出来。</p>
+      </div>
+    </section>
+
     <!-- ================= software ================= -->
     <section class="section" id="code">
       <div class="wrap">
@@ -404,7 +416,8 @@
           <p>合作、数据，或者与文档不符、跑不起来的代码。</p>
         </div>
         <div class="contact__mail">
-          <a class="mail" href="mailto:guoyin.chen@astro.uio.no">guoyin.chen@astro.uio.no</a>
+          <a class="mail" href="mailto:gychen@smail.nju.edu.cn">gychen@smail.nju.edu.cn</a>
+          <p class="contact__alt mono">备用 <a href="mailto:guoyinc@astro.uio.no">guoyinc@astro.uio.no</a></p>
         </div>
         <div class="contact__links mono">
           <a href="https://orcid.org/0000-0001-9610-0433">ORCID</a>

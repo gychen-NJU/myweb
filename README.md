@@ -74,11 +74,32 @@ the build do the rewrite; do not hand-edit `zh/*.html`.
 The site is static and needs no build step on the server: the built HTML is committed
 as-is, so Pages serves the repository verbatim.
 
-1. Create the repository, push these files at the root (the four built HTML pages +
-   `zh/`, `assets/`, `404.html`, `publications.bib`).
-2. Settings → Pages → Deploy from a branch → `main` / `/ (root)`.
-3. If you use a project page (`gychen-NJU.github.io/<repo>/`), every link is relative,
-   so it works unchanged. For a custom domain, add a `CNAME` file with the domain.
+**Choosing the repository name decides the URL.**
+
+| Repository | URL | Note |
+| --- | --- | --- |
+| `gychen-NJU.github.io` | `https://gychen-nju.github.io/` | user site: cleanest address, one per account |
+| `myweb` (or any name) | `https://gychen-nju.github.io/myweb/` | project site, same content, longer address |
+
+All links are relative, so both work unchanged. For a custom domain, add `CNAME`.
+
+**Visibility versus Pages.** On a GitHub Free account, Pages only publishes from a
+*public* repository; private repositories need GitHub Pro/Team/Enterprise. And a Pages
+site has no access control — publishing from a private repository still makes the site
+publicly readable. So "private source + public site" needs a different host (Cloudflare
+Pages or Netlify can build from a private repository), not GitHub Pages.
+
+Steps, public route:
+
+```sh
+# from the repository root; the site files are already at the top level
+gh repo create gychen-NJU.github.io --public --source . --remote origin --push
+# then: Settings → Pages → Deploy from a branch → main → / (root)
+```
+
+Private-source route (Cloudflare Pages): create a private repository, push, connect it
+to Cloudflare Pages with build command `node build.mjs` and output directory `/` — the
+site is then public while the repository stays private.
 
 `.nojekyll` is included so GitHub Pages serves the directory verbatim.
 

@@ -1,5 +1,7 @@
 # Guoyin Chen — academic site
 
+**Live:** <https://gychen-nju.github.io/myweb/> · 中文: <https://gychen-nju.github.io/myweb/zh/>
+
 A hand-written, framework-free academic homepage: solar physics, spectropolarimetric
 inversion, magnetic-field extrapolation. The design language is a printed observatory
 plate book — bone paper, ink, hairlines, plate numbers, and the blue/red of a Stokes
@@ -96,6 +98,17 @@ Steps, public route:
 gh repo create gychen-NJU.github.io --public --source . --remote origin --push
 # then: Settings → Pages → Deploy from a branch → main → / (root)
 ```
+
+**This repository is live as a project page**, created with:
+
+```sh
+gh repo create myweb --public --source . --remote origin --push
+gh api -X POST repos/gychen-NJU/myweb/pages -f 'source[branch]=main' -f 'source[path]=/'
+```
+
+To republish after an edit: rebuild with the right `SITE_URL`, commit, push. Pages
+rebuilds on its own; check progress with
+`gh api repos/gychen-NJU/myweb/pages/builds/latest --jq .status`.
 
 Private-source route (Cloudflare Pages): create a private repository, push, connect it
 to Cloudflare Pages with build command `node build.mjs` and output directory `/` — the

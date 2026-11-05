@@ -1486,8 +1486,19 @@ body::after {
 
 @media (max-width: 720px) {
   .corona { margin-block: clamp(2.4rem, 8vw, 3.4rem); }
-  .corona__in { min-height: 300px; }
+  .corona__in { min-height: 340px; }
   .corona__cap { font-size: 0.82rem; }
+  /* On a narrow screen the caption sits under the glow, not beside it, so the
+     scrim has to run bottom-up instead of left-to-right. */
+  .corona::after {
+    background: linear-gradient(
+      to top,
+      rgba(6, 7, 9, 0.9) 0%,
+      rgba(6, 7, 9, 0.6) 34%,
+      rgba(6, 7, 9, 0.12) 64%,
+      rgba(6, 7, 9, 0) 88%
+    );
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

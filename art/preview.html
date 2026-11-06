@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>solar-field preview</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #f4eee3; }
+  .art {
+    position: fixed; inset: 0;
+    background: url("./solar-field.svg") right top / var(--w, 1850px) auto no-repeat;
+    opacity: var(--a, .18);
+  }
+  .txt {
+    position: relative; width: 34rem; margin: 120px 0 0 90px;
+    font-family: "Spectral", Georgia, serif; font-size: 17px; line-height: 1.7; color: #171310;
+  }
+  .txt h1 { font-size: 64px; line-height: 1; margin: 0 0 24px; font-weight: 500; }
+  .controls { position: fixed; left: 12px; bottom: 12px; font: 12px ui-monospace, monospace; display: flex; gap: 12px; }
+</style>
+</head>
+<body>
+<div class="art"></div>
+<div class="txt">
+  <h1>Guoyin Chen</h1>
+  <p>The Sun's magnetic field is written in polarised light. I build the diagnostics that read it: inversion codes, neural solvers, field extrapolations. Then I test what we think the solar atmosphere is doing.</p>
+  <p>PhD student, School of Astronomy and Space Science, Nanjing University. Guest researcher, Rosseland Centre for Solar Physics, University of Oslo.</p>
+</div>
+<div class="controls">
+  <label>size <input id="w" type="range" min="900" max="2600" step="50" value="1200"></label>
+  <label>opacity <input id="a" type="range" min="0" max="100" value="55"></label>
+  <span id="v">1200 / 0.55</span>
+</div>
+<script>
+  const art = document.querySelector('.art');
+  const w = document.getElementById('w');
+  const a = document.getElementById('a');
+  const v = document.getElementById('v');
+  const set = () => {
+    art.style.setProperty('--w', w.value + 'px');
+    art.style.setProperty('--a', (a.value / 100).toFixed(2));
+    v.textContent = w.value + ' / ' + (a.value / 100).toFixed(2);
+  };
+  w.addEventListener('input', set); a.addEventListener('input', set); set();
+</script>
+</body>
+</html>

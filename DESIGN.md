@@ -268,3 +268,22 @@ Added 2026-11-05 at the owner's request ("现在网页背景整体都是白色�
 - The caption must never imply the loops are measured data. If the drawing is
   ever replaced by a real extrapolation, the word "schematic" comes out and the
   provenance line goes in.
+
+## Hero field band
+
+The first screen carries one generated artwork: a magnetogram band placed in the
+empty stretch between the affiliation block and the action buttons, bled to the
+right edge, masked top and bottom so it has no hard border. It is drawn from the
+same two polarities as the rest of the page, at the scale where the strokes read
+as data rather than texture.
+
+Rules that came out of building it:
+
+- A background must occupy space that has no type. An artwork behind the name or
+  the paragraphs is not decoration, it is noise; every placement that overlapped
+  text was rejected during review.
+- Generate the artwork from the physics, not from a mood. The marks are
+  line-of-sight field signs; the plate beside them is a field-line family.
+- If the graphic is not an observation, the nearest caption says so.
+- Keep the generator in `art/` and the output committed. 449 KB of SVG compresses
+  to ~90 KB on the wire, which is cheaper than a raster of the same crispness.

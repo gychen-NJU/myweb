@@ -146,3 +146,24 @@ works for any host. Re-run the build with the right `SITE_URL` before every depl
   is listed as the secondary one.
 - Open questions left to the site's owner: PhD thesis, talks/CV, and whether to
   publish a Google Scholar link.
+
+## The artwork
+
+All decorative graphics are generated from code and committed, so the page never
+depends on an external service.
+
+| file | produced by | used for |
+| --- | --- | --- |
+| `assets/img/solar-field.svg` | `node art/magnetogram.mjs` | the magnetogram band in the hero |
+| `assets/img/field-lines.svg` | `node art/magnetogram.mjs` (earlier revision) / `data/_tmp/field.mjs` | Plate III, the dark corona band |
+| `assets/img/og-cover.jpg` | `art/preview.html` + a 1200×630 screenshot | the social card |
+
+`art/preview.html` renders the magnetogram on the paper colour with a live
+opacity slider, which is how the band's strength was chosen. Regenerate with:
+
+```
+node art/magnetogram.mjs
+```
+
+The band is not an observation and never claims to be: it is a schematic
+magnetogram, and the dark plate beside it says so in its caption.

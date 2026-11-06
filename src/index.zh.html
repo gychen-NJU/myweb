@@ -221,16 +221,19 @@
           </div>
         </div>
 
-        <figure class="plate plate--wide plate--figure">
+        <figure class="plate plate--figure plate--diagram">
           <div class="plate__media">
             <picture>
-              <source srcset="assets/img/plate-stokes.webp" type="image/webp">
-              <img src="assets/img/plate-stokes.jpg" width="1800" height="1132" loading="lazy" decoding="async"
-                   alt="四行四列的图版：行分别是 Hinode 分光偏振仪的观测与反演合成图，对应 6301.5 与 6302.5 埃两条谱线；列分别是 Stokes I、Q、U、V。">
+              <source srcset="assets/img/arch-spot.webp" type="image/webp">
+              <img src="assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
+                   alt="SPOT 网络结构：Stokes I、Q、U、V 进入嵌入层，经过两个傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八个参数。">
             </picture>
           </div>
-          <div class="plate__no"><b>图版 III</b><span>Stokes 图</span></div>
-          <figcaption>行：Hinode/SP 观测，以及反演合成出的同一批图，对应 Fe I 6301.5 Å 与 6302.5 Å 两条谱线。列：Stokes I、Q、U、V。本站的蓝与红，就是这张图里磁场的两种符号。取自 Chen et al. 2026, <i>A&amp;A</i> <b>710</b>, A227。</figcaption>
+          <div class="plate__no">
+            <span class="mono">图版 III</span>
+            <span class="mono">反演网络</span>
+          </div>
+          <figcaption>一次前向传播取代逐像素迭代：Stokes IQUV 进入，经傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八组参数（T、P<sub>e</sub>、B、&gamma;、&phi;、v<sub>LOS</sub>、v<sub>mic</sub>、M）。取自 Chen et al. 2026, A&amp;A 710, A227。</figcaption>
         </figure>
       </div>
     </section>

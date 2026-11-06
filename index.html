@@ -12,14 +12,14 @@
   <meta property="og:title" content="Guoyin Chen (陈国银) — Solar Physics">
   <meta property="og:description" content="The Sun's magnetic field is written in polarised light. I build the diagnostics that read it.">
   <meta property="og:locale" content="en_GB">
-  <meta property="og:image" content="https://gychen-nju.github.io/myweb/assets/img/og-cover.jpg">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Guoyin Chen, PhD student at Nanjing University and guest researcher at the Rosseland Centre for Solar Physics, University of Oslo.">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="alternate" hreflang="en" href="https://gychen-nju.github.io/myweb/index.html">
-  <link rel="alternate" hreflang="zh-Hans" href="https://gychen-nju.github.io/myweb/zh/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://gychen-nju.github.io/myweb/index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="zh-Hans" href="zh/index.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/spectral-normal-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -49,7 +49,6 @@
     ]
   }
   </script>
-  <link rel="canonical" href="https://gychen-nju.github.io/myweb/">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -232,16 +231,19 @@
           </div>
         </div>
 
-        <figure class="plate plate--wide plate--figure">
+        <figure class="plate plate--figure plate--diagram">
           <div class="plate__media">
             <picture>
-              <source srcset="assets/img/plate-stokes.webp" type="image/webp">
-              <img src="assets/img/plate-stokes.jpg" width="1800" height="1132" loading="lazy" decoding="async"
-                   alt="A four by four grid of maps: rows show observations from the Hinode SpectroPolarimeter and the corresponding synthetic maps from the inversion, for the 6301.5 and 6302.5 angstrom lines; columns show Stokes I, Q, U and V.">
+              <source srcset="assets/img/arch-spot.webp" type="image/webp">
+              <img src="assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
+                   alt="SPOT network diagram: Stokes I, Q, U and V enter an embedding block, pass through two Fourier neural-operator blocks and four transformer blocks, then a depth decoder and eight parameter heads.">
             </picture>
           </div>
-          <div class="plate__no"><b>Plate III</b><span>Stokes maps</span></div>
-          <figcaption>Rows: Hinode/SP observations, then the same maps synthesised by the inversion — for the Fe I lines at 6301.5 Å and 6302.5 Å. Columns: Stokes I, Q, U, V. The blue and red of the site are the signs of this figure. From Chen et al. 2026, <i>A&amp;A</i> <b>710</b>, A227.</figcaption>
+          <div class="plate__no">
+            <span class="mono">Plate III</span>
+            <span class="mono">The inversion network</span>
+          </div>
+          <figcaption>One forward pass replaces the per-pixel iteration: Stokes IQUV in, a Fourier neural-operator block, four transformer blocks, a depth decoder, and eight parameter heads (T, P<sub>e</sub>, B, &gamma;, &phi;, v<sub>LOS</sub>, v<sub>mic</sub>, M) out. From Chen et al. 2026, A&amp;A 710, A227.</figcaption>
         </figure>
       </div>
     </section>

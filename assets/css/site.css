@@ -1586,3 +1586,25 @@ html[lang="zh-CN"] .contact__alt { letter-spacing: 0.03em; }
   background-image: none;
 }
 
+
+
+/* The profile strip that opens the research section: a wide, thin plate whose
+   job is to show what a Stokes measurement looks like before the reader meets
+   the prose about it. */
+.plate--strip {
+  margin-top: clamp(1.6rem, 3.2vw, 2.8rem);
+  margin-bottom: clamp(1.8rem, 3.4vw, 3rem);
+}
+
+.plate--strip .plate__media img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .plate--strip {
+    margin-top: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+}
+

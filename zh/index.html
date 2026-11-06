@@ -231,20 +231,41 @@
           </div>
         </div>
 
-        <figure class="plate plate--figure plate--diagram">
-          <div class="plate__media">
-            <picture>
-              <source srcset="../assets/img/arch-spot.webp" type="image/webp">
-              <img src="../assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
-                   alt="SPOT 网络结构：Stokes I、Q、U、V 进入嵌入层，经过两个傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八个参数。">
-            </picture>
-          </div>
+        <figure class="plate plate--figure plate--nets">
           <div class="plate__no">
             <span class="mono">图版 III</span>
-            <span class="mono">反演网络</span>
+            <span class="mono">两个网络</span>
           </div>
-          <figcaption>一次前向传播取代逐像素迭代：Stokes IQUV 进入，经傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八组参数（T、P<sub>e</sub>、B、&gamma;、&phi;、v<sub>LOS</sub>、v<sub>mic</sub>、M）。取自 Chen et al. 2026, A&amp;A 710, A227。</figcaption>
+
+          <div class="net">
+            <div class="net__body">
+              <div class="net__media">
+                <picture>
+                  <source srcset="../assets/img/arch-pi2nn.webp" type="image/webp">
+                  <img src="../assets/img/arch-pi2nn.jpg" width="1146" height="504" loading="lazy" decoding="async"
+                       alt="PI-squared-NN 结构：编码器与解码器之间交换八参数大气，Milne-Eddington 正演把网络输出再变回 Stokes 谱用于计算损失。">
+                </picture>
+              </div>
+              <p class="net__cap"><b>PI<sup>2</sup>NN。</b>物理信息网络，按闭环方式训练：Milne&ndash;Eddington 正演把网络自己的输出再变回谱，损失因此在 Stokes 空间而不是参数空间里度量。它给的是一层初值大气，随后由经典反演精修。</p>
+            </div>
+          </div>
+
+          <div class="net">
+            <div class="net__body">
+              <div class="net__media">
+                <picture>
+                  <source srcset="../assets/img/arch-spot.webp" type="image/webp">
+                  <img src="../assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
+                       alt="SPOT 网络结构：Stokes I、Q、U、V 进入嵌入层，经过两个傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八个参数。">
+                </picture>
+              </div>
+              <p class="net__cap"><b>SPOT。</b>算子 Transformer：Stokes IQUV 进入，经两个傅里叶神经算子模块与四个 Transformer 模块，再由深度解码器输出八组参数。一次前向传播取代逐像素迭代。</p>
+            </div>
+          </div>
+
+          <p class="plate__src mono">Chen et al. 2026, A&amp;A 710, A227</p>
         </figure>
+
       </div>
     </section>
 

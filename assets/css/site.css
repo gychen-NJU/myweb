@@ -1644,3 +1644,68 @@ html[lang="zh-CN"] .contact__alt { letter-spacing: 0.03em; }
   }
 }
 
+/* 25. Two networks, one plate
+   Each architecture gets a letter, its own line of explanation, and shares one
+   source line at the foot. The letter sits in a narrow column so the two
+   figures line up on the same left edge no matter how tall the caption runs. */
+.plate--nets {
+  display: block;
+}
+
+.plate--nets .net {
+  padding-top: clamp(1.5rem, 2.4vw, 2.2rem);
+}
+
+.plate--nets .net + .net {
+  margin-top: clamp(1.7rem, 2.8vw, 2.6rem);
+  border-top: 1px solid var(--rule);
+}
+
+.plate--nets .net__letter {
+  margin-right: 0.55rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-3);
+}
+
+.plate--nets .net__media {
+  max-width: 1120px;
+}
+
+.plate--nets .net__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+.plate--nets .net__cap {
+  max-width: 74ch;
+  margin: 0.9rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  line-height: 1.62;
+  letter-spacing: 0.01em;
+  color: var(--ink-2);
+}
+
+.plate--nets .net__cap b {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.plate--nets .plate__src {
+  margin: clamp(1.3rem, 2.2vw, 1.9rem) 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--ink);
+  font-size: 0.6875rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+@media (max-width: 720px) {
+  .plate--nets .net__cap {
+    font-size: 0.625rem;
+  }
+}

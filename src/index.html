@@ -221,20 +221,41 @@
           </div>
         </div>
 
-        <figure class="plate plate--figure plate--diagram">
-          <div class="plate__media">
-            <picture>
-              <source srcset="assets/img/arch-spot.webp" type="image/webp">
-              <img src="assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
-                   alt="SPOT network diagram: Stokes I, Q, U and V enter an embedding block, pass through two Fourier neural-operator blocks and four transformer blocks, then a depth decoder and eight parameter heads.">
-            </picture>
-          </div>
+        <figure class="plate plate--figure plate--nets">
           <div class="plate__no">
             <span class="mono">Plate III</span>
-            <span class="mono">The inversion network</span>
+            <span class="mono">Two networks</span>
           </div>
-          <figcaption>One forward pass replaces the per-pixel iteration: Stokes IQUV in, a Fourier neural-operator block, four transformer blocks, a depth decoder, and eight parameter heads (T, P<sub>e</sub>, B, &gamma;, &phi;, v<sub>LOS</sub>, v<sub>mic</sub>, M) out. From Chen et al. 2026, A&amp;A 710, A227.</figcaption>
+
+          <div class="net">
+            <div class="net__body">
+              <div class="net__media">
+                <picture>
+                  <source srcset="assets/img/arch-pi2nn.webp" type="image/webp">
+                  <img src="assets/img/arch-pi2nn.jpg" width="1146" height="504" loading="lazy" decoding="async"
+                       alt="PI-squared-NN diagram: an encoder and a decoder exchange an eight-parameter atmosphere, while a Milne-Eddington forward model turns the network output back into Stokes spectra for the loss.">
+                </picture>
+              </div>
+              <p class="net__cap"><span class="net__letter mono" aria-hidden="true">A</span><b>PI<sup>2</sup>NN.</b> A physics-informed network trained cyclically: a Milne&ndash;Eddington forward model turns the network&rsquo;s own output back into spectra, so the loss is measured in Stokes space rather than in parameter space. It returns a starting atmosphere; the classical inversion refines it.</p>
+            </div>
+          </div>
+
+          <div class="net">
+            <div class="net__body">
+              <div class="net__media">
+                <picture>
+                  <source srcset="assets/img/arch-spot.webp" type="image/webp">
+                  <img src="assets/img/arch-spot.jpg" width="1800" height="642" loading="lazy" decoding="async"
+                       alt="SPOT network diagram: Stokes I, Q, U and V enter an embedding block, pass through two Fourier neural-operator blocks and four transformer blocks, then a depth decoder and eight parameter heads.">
+                </picture>
+              </div>
+              <p class="net__cap"><span class="net__letter mono" aria-hidden="true">B</span><b>SPOT.</b> An operator transformer: Stokes IQUV in, two Fourier neural-operator blocks, four transformer blocks, a depth decoder, and eight parameter heads out. One forward pass replaces the per-pixel iteration.</p>
+            </div>
+          </div>
+
+          <p class="plate__src mono">Chen et al. 2026, A&amp;A 710, A227</p>
         </figure>
+
       </div>
     </section>
 
